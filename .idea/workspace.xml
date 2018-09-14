@@ -6,13 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="为测试时">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/sql/customer_init.sql" afterDir="false" />
+    <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -82,8 +78,8 @@
       <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+            <state relative-caret-position="423">
+              <caret line="309" column="50" lean-forward="true" selection-start-line="309" selection-start-column="50" selection-end-line="309" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5821#5822#0" expanded="true" />
@@ -93,13 +89,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerServiceTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomerServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            <state relative-caret-position="-95">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1281#1282#0" expanded="true" />
                 <element signature="e#1336#1337#0" expanded="true" />
               </folding>
@@ -107,7 +102,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer_init.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="customer_init.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/sql/customer_init.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -175,10 +170,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/sql/customer_init.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
       </list>
     </option>
   </component>
@@ -459,9 +454,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceTest.deleteCustomer">
+  <component name="RunManager" selected="JUnit.CustomerServiceTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="CustomerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CustomJavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lin.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="CustomerServiceTest.createCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CustomJavaWeb" />
@@ -499,29 +517,6 @@
       <option name="PACKAGE_NAME" value="com.lin.service" />
       <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
       <option name="METHOD_NAME" value="deleteCustomer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CustomerServiceTest.getCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CustomJavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lin.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lin.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="getCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -725,18 +720,18 @@
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
       <item itemvalue="JUnit.CustomerServiceTest.getCustomerList" />
-      <item itemvalue="JUnit.CustomerServiceTest.getCustomer" />
       <item itemvalue="JUnit.CustomerServiceTest.createCustomer" />
       <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
       <item itemvalue="JUnit.CustomerServiceTest.deleteCustomer" />
+      <item itemvalue="JUnit.CustomerServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceTest" />
+        <item itemvalue="JUnit.CustomerServiceTest.getCustomerList" />
         <item itemvalue="JUnit.CustomerServiceTest.deleteCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.createCustomer" />
-        <item itemvalue="JUnit.CustomerServiceTest.getCustomer" />
-        <item itemvalue="JUnit.CustomerServiceTest.getCustomerList" />
       </list>
     </recent_temporary>
   </component>
@@ -752,7 +747,7 @@
       <updated>1536850901799</updated>
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
-      <workItem from="1536901760433" duration="15906000" />
+      <workItem from="1536901760433" duration="16220000" />
     </task>
     <task id="LOCAL-00001" summary="设置编码相关的pom.xml配置">
       <created>1536851585454</created>
@@ -908,13 +903,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536920760250</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="为测试时添加专用的数据库配置">
+      <created>1536923706929</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536923706929</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerServiceTest_getCustomer - 2018.09.14 at 18h 55m 04s.xml">
-      <configuration name="CustomerServiceTest.getCustomer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerServiceTest_getCustomer - 2018.09.14 at 18h 55m 29s.xml">
       <configuration name="CustomerServiceTest.getCustomer" configurationId="JUnit" />
     </history-entry>
@@ -942,9 +941,12 @@
     <history-entry file="CustomerServiceTest_deleteCustomer - 2018.09.14 at 18h 58m 07s.xml">
       <configuration name="CustomerServiceTest.deleteCustomer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerServiceTest_deleteCustomer - 2018.09.14 at 19h 13m 35s.xml">
+      <configuration name="CustomerServiceTest.deleteCustomer" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21788000" />
+    <option name="totallyTimeSpent" value="22102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -976,7 +978,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.4619355" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5652819" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5652819" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -1047,7 +1049,8 @@
     <MESSAGE value="完善插入实体的逻辑" />
     <MESSAGE value="完善更新实体的逻辑" />
     <MESSAGE value="完善删除实体的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善删除实体的逻辑" />
+    <MESSAGE value="为测试时添加专用的数据库配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="为测试时添加专用的数据库配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1367,18 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5821#5822#0" expanded="true" />
-            <element signature="e#5871#5872#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -1390,22 +1381,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1336#1337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/sql/customer_init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="309" column="50" lean-forward="true" selection-start-line="309" selection-start-column="50" selection-end-line="309" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5821#5822#0" expanded="true" />
+            <element signature="e#5871#5872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1488,7 +1490,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: commons-dbutils:commons-dbutils:1.6</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

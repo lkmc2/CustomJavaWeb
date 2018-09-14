@@ -10,6 +10,10 @@ import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -286,6 +290,29 @@ public final class DatabaseHelper {
      */
     private static <T> String getTableName(Class<T> entityClass) {
         return entityClass.getSimpleName();
+    }
+
+    /**
+     * 执行sql文件
+     * @param filePath sql文件路径
+     */
+    public static void executeSqlFile(String filePath) {
+        try(InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(filePath);
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader reader = new BufferedReader(isr)) {
+
+            String sql;
+            // 执行文件中的每一条sql
+            while ((sql = reader.readLine()) != null) {
+                if (sql.isEmpty()) {
+                    continue;
+                }
+                DatabaseHelper.executeUpdate(sql);
+            }
+        } catch (IOException e) {
+            LOGGER.error("执行SQL文件失败", e);
+            throw new RuntimeException(e);
+        }
     }
 
 }
