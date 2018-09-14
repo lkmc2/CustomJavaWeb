@@ -35,6 +35,14 @@ public final class ClassUtil {
     /**
      * 加载类
      * @param className 类名
+     */
+    public static void loadClass(String className) {
+        loadClass(className, true);
+    }
+
+    /**
+     * 加载类
+     * @param className 类名
      * @param isInitialized 是否实例化
      * @return 加载后的类
      */
