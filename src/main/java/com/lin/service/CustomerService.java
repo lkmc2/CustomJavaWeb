@@ -1,15 +1,17 @@
 package com.lin.service;
 
+import com.lin.helper.DatabaseHelper;
 import com.lin.model.Customer;
-import com.lin.utils.PropsUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 /**
  * @author lkmc2
@@ -21,25 +23,6 @@ public class CustomerService {
     // 日志记录器
     private static final Logger LOGGER = LoggerFactory.getLogger(CustomerService.class);
 
-    private static final String DRIVER; // 驱动名
-    private static final String URL; // 数据库链接
-    private static final String USERNAME; // 用户名
-    private static final String PASSWORD; // 密码
-
-    static {
-        Properties conf = PropsUtil.loadProps("db.properties");
-        DRIVER = conf.getProperty("jdbc.driver");
-        URL = conf.getProperty("jdbc.url");
-        USERNAME = conf.getProperty("jdbc.username");
-        PASSWORD = conf.getProperty("jdbc.password");
-
-        try {
-            Class.forName(DRIVER);
-        } catch (ClassNotFoundException e) {
-            LOGGER.error("无法加载JDBC驱动", e);
-        }
-    }
-
     /**
      * 获取客户列表
      * @return 客户列表
@@ -50,7 +33,8 @@ public class CustomerService {
 
         try {
             String sql = "SELECT * FROM customer";
-            conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            // 获取数据库连接
+            conn = DatabaseHelper.getConnection();
 
             PreparedStatement stmt = conn.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
@@ -69,13 +53,8 @@ public class CustomerService {
         } catch (SQLException e) {
             LOGGER.error("执行SQL失败", e);
         } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    LOGGER.error("关闭数据库连接失败", e);
-                }
-            }
+            // 关闭数据库连接
+            DatabaseHelper.closeConnection(conn);
         }
 
         return null;
