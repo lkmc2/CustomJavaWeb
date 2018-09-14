@@ -270,11 +270,27 @@ public final class DatabaseHelper {
     }
 
     /**
+     * 删除实体
+     * @param entityClass 实体类型
+     * @param id 实体id
+     * @param <T> 实体泛型
+     * @return 是否删除成功
+     */
+    public static <T> boolean deleteEntity(Class<T> entityClass, long id) {
+        String sql = String.format("DELETE FROM %s WHERE id = ?", getTableName(entityClass));
+
+        // 打印sql信息
+        logSqlInfo(sql, id);
+
+        return executeUpdate(sql, id) == 1;
+    }
+
+    /**
      * 打印sql信息
      * @param sql 执行的sql
      * @param values 参数值
      */
-    private static void logSqlInfo(String sql, Object[] values) {
+    private static void logSqlInfo(String sql, Object... values) {
         for (Object value : values) {
             String result = String.valueOf(value);
 
@@ -294,7 +310,5 @@ public final class DatabaseHelper {
     private static <T> String getTableName(Class<T> entityClass) {
         return entityClass.getSimpleName();
     }
-
-
 
 }

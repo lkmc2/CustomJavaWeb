@@ -9,7 +9,6 @@
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="281" column="55" selection-start-line="281" selection-start-column="55" selection-end-line="281" selection-end-column="55" />
+            <state relative-caret-position="879">
+              <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5821#5822#0" expanded="true" />
@@ -88,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerServiceTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomerServiceTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="722">
+              <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,6 +114,7 @@
     <findStrings>
       <find>StringUtils</find>
       <find>isNoneEmpty</find>
+      <find>Assert.</find>
     </findStrings>
     <replaceStrings>
       <replace>StringUtil</replace>
@@ -145,8 +145,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
       </list>
     </option>
   </component>
@@ -406,7 +406,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceTest.updateCustomer">
+  <component name="RunManager" selected="JUnit.CustomerServiceTest.deleteCustomer">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -423,6 +423,29 @@
       <option name="PACKAGE_NAME" value="com.lin.service" />
       <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
       <option name="METHOD_NAME" value="createCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CustomerServiceTest.deleteCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CustomJavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lin.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="deleteCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -652,11 +675,13 @@
       <item itemvalue="JUnit.CustomerServiceTest.getCustomer" />
       <item itemvalue="JUnit.CustomerServiceTest.createCustomer" />
       <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
+      <item itemvalue="JUnit.CustomerServiceTest.deleteCustomer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
+        <item itemvalue="JUnit.CustomerServiceTest.deleteCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.createCustomer" />
+        <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.getCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.getCustomerList" />
       </list>
@@ -674,7 +699,7 @@
       <updated>1536850901799</updated>
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
-      <workItem from="1536901760433" duration="12784000" />
+      <workItem from="1536901760433" duration="13131000" />
     </task>
     <task id="LOCAL-00001" summary="设置编码相关的pom.xml配置">
       <created>1536851585454</created>
@@ -816,13 +841,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536916596811</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="完善更新实体的逻辑">
+      <created>1536920315827</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1536920315827</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 41m 07s.xml">
-      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 55m 49s.xml">
       <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
@@ -850,9 +879,12 @@
     <history-entry file="CustomerServiceTest_updateCustomer - 2018.09.14 at 18h 13m 46s.xml">
       <configuration name="CustomerServiceTest.updateCustomer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerServiceTest_updateCustomer - 2018.09.14 at 18h 17m 28s.xml">
+      <configuration name="CustomerServiceTest.updateCustomer" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18666000" />
+    <option name="totallyTimeSpent" value="19013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -881,7 +913,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32908162" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4619355" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4619355" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.5652819" />
@@ -953,7 +985,8 @@
     <MESSAGE value="通过ThreadLocal持有Connection数据库连接，简化打开和关闭数据库连接的代码" />
     <MESSAGE value="完善查询实体的逻辑" />
     <MESSAGE value="完善插入实体的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善插入实体的逻辑" />
+    <MESSAGE value="完善更新实体的逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善更新实体的逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1271,24 +1304,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="281" column="55" selection-start-line="281" selection-start-column="55" selection-end-line="281" selection-end-column="55" />
+        <state relative-caret-position="879">
+          <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5821#5822#0" expanded="true" />
             <element signature="e#5871#5872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

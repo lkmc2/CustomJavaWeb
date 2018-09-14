@@ -1,11 +1,12 @@
 package com.lin.service;
 
 import com.lin.model.Customer;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.List;
+
+import static org.junit.Assert.*;
 
 /**
  * @author lkmc2
@@ -24,14 +25,14 @@ public class CustomerServiceTest {
     @Test
     public void getCustomerList() {
         List<Customer> customerList = customerService.getCustomerList();
-        Assert.assertEquals(2, customerList.size());
+        assertEquals(2, customerList.size());
     }
 
     @Test
     public void getCustomer() {
         long id = 1;
         Customer customer = customerService.getCustomer(id);
-        Assert.assertNotNull(customer);
+        assertNotNull(customer);
     }
 
     @Test
@@ -42,7 +43,7 @@ public class CustomerServiceTest {
         fieldMap.put("telephone", "13456785599");
 
         boolean result = customerService.createCustomer(fieldMap);
-        Assert.assertTrue(result);
+        assertTrue(result);
     }
 
     @Test
@@ -53,14 +54,14 @@ public class CustomerServiceTest {
         fieldMap.put("remark", "Forever");
 
         boolean result = customerService.updateCustomer(id, fieldMap);
-        Assert.assertTrue(result);
+        assertTrue(result);
     }
 
     @Test
     public void deleteCustomer() {
-        long id = 1;
+        long id = 19;
         boolean result = customerService.deleteCustomer(id);
-        Assert.assertTrue(result);
+        assertTrue(result);
     }
 
 }

@@ -66,8 +66,7 @@ public class CustomerService {
      * @return 是否删除成功
      */
     public boolean deleteCustomer(long id) {
-        // todo
-        return false;
+        return DatabaseHelper.deleteEntity(Customer.class, id);
     }
 
 }
