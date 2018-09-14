@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
  * @author lkmc2
  * @date 2018/9/14
  * @since 1.0.0
- * @description 封装Action信息
+ * @description 封装Action信息（处理器）
  */
 public class Handler {
 
