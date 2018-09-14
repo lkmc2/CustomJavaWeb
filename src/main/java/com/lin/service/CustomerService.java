@@ -28,36 +28,18 @@ public class CustomerService {
      * @return 客户列表
      */
     public List<Customer> getCustomerList() {
-        Connection conn = null;
-        List<Customer> customerList = new ArrayList<>();
+        // 获取数据库连接
+        Connection conn = DatabaseHelper.getConnection();
 
         try {
             String sql = "SELECT * FROM customer";
-            // 获取数据库连接
-            conn = DatabaseHelper.getConnection();
 
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            ResultSet rs = stmt.executeQuery();
-
-            while (rs.next()) {
-                Customer customer = new Customer();
-                customer.setId(rs.getLong("id"));
-                customer.setName(rs.getString("name"));
-                customer.setContact(rs.getString("contact"));
-                customer.setTelephone(rs.getString("telephone"));
-                customer.setEmail(rs.getString("email"));
-                customer.setRemark(rs.getString("remark"));
-                customerList.add(customer);
-            }
-            return customerList;
-        } catch (SQLException e) {
-            LOGGER.error("执行SQL失败", e);
+            // 查询实体列表
+            return DatabaseHelper.queryEntityList(Customer.class, conn, sql);
         } finally {
             // 关闭数据库连接
             DatabaseHelper.closeConnection(conn);
         }
-
-        return null;
     }
 
     /**
