@@ -57,8 +57,7 @@ public class CustomerService {
      * @return 是否更新成功
      */
     public boolean updateCustomer(long id, Map<String, Object> fieldMap) {
-        // todo
-        return false;
+        return DatabaseHelper.updateEntity(Customer.class, id, fieldMap);
     }
 
     /**

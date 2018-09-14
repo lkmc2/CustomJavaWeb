@@ -50,6 +50,7 @@ public class CustomerServiceTest {
         long id = 1;
         HashMap<String, Object> fieldMap = new HashMap<>();
         fieldMap.put("contact", "Eric");
+        fieldMap.put("remark", "Forever");
 
         boolean result = customerService.updateCustomer(id, fieldMap);
         Assert.assertTrue(result);

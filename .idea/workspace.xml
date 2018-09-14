@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,8 +65,8 @@
       <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state relative-caret-position="399">
+              <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="228" column="46" lean-forward="true" selection-start-line="228" selection-start-column="46" selection-end-line="228" selection-end-column="46" />
+            <state relative-caret-position="159">
+              <caret line="281" column="55" selection-start-line="281" selection-start-column="55" selection-end-line="281" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5821#5822#0" expanded="true" />
@@ -87,39 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/CollectionUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropsUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/PropsUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2250#2251#0" expanded="true" />
-                <element signature="e#2302#2303#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="-152">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,10 +143,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/CastUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/CollectionUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" />
       </list>
     </option>
   </component>
@@ -405,6 +378,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -432,7 +406,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceTest.createCustomer">
+  <component name="RunManager" selected="JUnit.CustomerServiceTest.updateCustomer">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -495,6 +469,29 @@
       <option name="PACKAGE_NAME" value="com.lin.service" />
       <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
       <option name="METHOD_NAME" value="getCustomerList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CustomerServiceTest.updateCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CustomJavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lin.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lin.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="updateCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -654,9 +651,11 @@
       <item itemvalue="JUnit.CustomerServiceTest.getCustomerList" />
       <item itemvalue="JUnit.CustomerServiceTest.getCustomer" />
       <item itemvalue="JUnit.CustomerServiceTest.createCustomer" />
+      <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceTest.updateCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.createCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.getCustomer" />
         <item itemvalue="JUnit.CustomerServiceTest.getCustomerList" />
@@ -675,7 +674,7 @@
       <updated>1536850901799</updated>
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
-      <workItem from="1536901760433" duration="9032000" />
+      <workItem from="1536901760433" duration="12784000" />
     </task>
     <task id="LOCAL-00001" summary="设置编码相关的pom.xml配置">
       <created>1536851585454</created>
@@ -810,34 +809,50 @@
       <option name="project" value="LOCAL" />
       <updated>1536915024494</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="完善插入实体的逻辑">
+      <created>1536916596811</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536916596811</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerServiceTest_getCustomerList - 2018.09.14 at 12h 38m 09s.xml">
-      <configuration name="CustomerServiceTest.getCustomerList" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 41m 07s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_getCustomerList - 2018.09.14 at 16h 08m 13s.xml">
-      <configuration name="CustomerServiceTest.getCustomerList" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 55m 49s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_getCustomerList - 2018.09.14 at 16h 09m 28s.xml">
-      <configuration name="CustomerServiceTest.getCustomerList" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 55m 56s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_getCustomerList - 2018.09.14 at 16h 43m 11s.xml">
-      <configuration name="CustomerServiceTest.getCustomerList" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 56m 31s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_getCustomer - 2018.09.14 at 16h 49m 27s.xml">
-      <configuration name="CustomerServiceTest.getCustomer" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 57m 37s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_getCustomer - 2018.09.14 at 16h 49m 49s.xml">
-      <configuration name="CustomerServiceTest.getCustomer" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 17h 58m 25s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerServiceTest_getCustomer - 2018.09.14 at 16h 50m 06s.xml">
-      <configuration name="CustomerServiceTest.getCustomer" configurationId="JUnit" />
+    <history-entry file="CustomerServiceTest_updateCustomer - 2018.09.14 at 18h 10m 45s.xml">
+      <configuration name="CustomerServiceTest.updateCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceTest_updateCustomer - 2018.09.14 at 18h 11m 06s.xml">
+      <configuration name="CustomerServiceTest.updateCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceTest_updateCustomer - 2018.09.14 at 18h 11m 51s.xml">
+      <configuration name="CustomerServiceTest.updateCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceTest_updateCustomer - 2018.09.14 at 18h 13m 46s.xml">
+      <configuration name="CustomerServiceTest.updateCustomer" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14914000" />
+    <option name="totallyTimeSpent" value="18666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -866,7 +881,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32908162" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4619355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4619355" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.5652819" />
@@ -937,11 +952,12 @@
     <MESSAGE value="使用Apache Commons DbUtils简化数据库代码的编写" />
     <MESSAGE value="通过ThreadLocal持有Connection数据库连接，简化打开和关闭数据库连接的代码" />
     <MESSAGE value="完善查询实体的逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善查询实体的逻辑" />
+    <MESSAGE value="完善插入实体的逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善插入实体的逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1161,18 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/PropsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2302#2303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -1198,28 +1202,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar!/org/apache/commons/dbutils/AbstractQueryRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="186" column="24" selection-start-line="186" selection-start-column="24" selection-end-line="186" selection-end-column="24" />
-          <folding>
-            <element signature="e#6412#6413#0" expanded="true" />
-            <element signature="e#6437#6438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar!/org/apache/commons/dbutils/ResultSetHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar!/org/apache/commons/dbutils/QueryRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="93" column="23" lean-forward="true" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1230,9 +1216,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/PropsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+            <element signature="e#2302#2303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar!/org/apache/commons/dbutils/AbstractQueryRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.6/commons-dbutils-1.6.jar!/org/apache/commons/dbutils/QueryRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="176" column="24" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="2237" column="18" selection-start-line="2237" selection-start-column="18" selection-end-line="2237" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/CollectionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
+        <state relative-caret-position="418">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1242,22 +1261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="228" column="46" lean-forward="true" selection-start-line="228" selection-start-column="46" selection-end-line="228" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5821#5822#0" expanded="true" />
-            <element signature="e#5871#5872#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        <state relative-caret-position="399">
+          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1266,10 +1273,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="-152">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="281" column="55" selection-start-line="281" selection-start-column="55" selection-end-line="281" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5821#5822#0" expanded="true" />
+            <element signature="e#5871#5872#0" expanded="true" />
           </folding>
         </state>
       </provider>

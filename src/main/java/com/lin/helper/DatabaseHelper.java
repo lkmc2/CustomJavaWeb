@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -205,29 +206,86 @@ public final class DatabaseHelper {
             return false;
         }
 
-        String sql = "INSERT INTO " + getTableName(entityClass);
-        StringBuilder columns = new StringBuilder("(");
-        StringBuilder values = new StringBuilder("(");
+        StringBuilder columns = new StringBuilder();
+        StringBuilder values = new StringBuilder();
 
         for (String fieldName : fieldMap.keySet()) {
             columns.append(fieldName).append(", ");
             values.append("?, ");
         }
 
-        // 将最后位置的逗号换成反括号
-        columns.replace(columns.lastIndexOf(", "), columns.length(), ")");
-        values.replace(values.lastIndexOf(", "), values.length(), ")");
+        // 将最后位置的逗号换成空格
+        columns.replace(columns.lastIndexOf(", "), columns.length(), "");
+        values.replace(values.lastIndexOf(", "), values.length(), "");
 
-        // 拼接执行的sql
-        sql += columns + " VALUES " + values;
-
-        LOGGER.info("当前执行的SQL为：" + sql);
+        // 将执行的sql
+        String sql = String.format("INSERT INTO %s(%s) VALUES (%s)", getTableName(entityClass), columns, values);
 
         // 将对象信息的值转换成参数数组
         Object[] params = fieldMap.values().toArray();
 
+        // 打印sql信息
+        logSqlInfo(sql, params);
 
         return executeUpdate(sql, params) == 1;
+    }
+
+    /**
+     * 更新实体
+     * @param entityClass 实体类型
+     * @param id 实体id
+     * @param fieldMap 对象信息
+     * @param <T> 实体泛型
+     * @return 是否更新成功
+     */
+    public static <T> boolean updateEntity(Class<T> entityClass,
+                                           long id,
+                                           Map<String, Object> fieldMap) {
+        // 对象信息为空，插入失败
+        if (CollectionUtil.isEmpty(fieldMap)) {
+            LOGGER.error("不能插入实体：fieldMap为空");
+            return false;
+        }
+
+        StringBuilder columns = new StringBuilder();
+
+        for (String fieldName : fieldMap.keySet()) {
+            columns.append(fieldName).append(" = ?, ");
+        }
+
+        // 将执行的sql
+        String sql = String.format("UPDATE %s SET %s WHERE id = ?",
+                getTableName(entityClass),
+                columns.substring(0, columns.lastIndexOf(", ")));
+
+        List<Object> paramsList = new ArrayList<>(fieldMap.values());
+        paramsList.add(id);
+
+        Object[] params = paramsList.toArray();
+
+        // 打印sql信息
+        logSqlInfo(sql, params);
+
+        return executeUpdate(sql, params) == 1;
+    }
+
+    /**
+     * 打印sql信息
+     * @param sql 执行的sql
+     * @param values 参数值
+     */
+    private static void logSqlInfo(String sql, Object[] values) {
+        for (Object value : values) {
+            String result = String.valueOf(value);
+
+            if (value instanceof String) {
+                result = String.format("'%s'", result);
+            }
+
+            sql = sql.replaceFirst("\\?", result);
+        }
+
+        LOGGER.info("当前执行的SQL为：" + sql);
     }
 
     /**
@@ -236,5 +294,7 @@ public final class DatabaseHelper {
     private static <T> String getTableName(Class<T> entityClass) {
         return entityClass.getSimpleName();
     }
+
+
 
 }
