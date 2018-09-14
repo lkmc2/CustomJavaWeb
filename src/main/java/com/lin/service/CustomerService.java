@@ -5,11 +5,6 @@ import com.lin.model.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -40,8 +35,10 @@ public class CustomerService {
      * @return 指定id的客户
      */
     public Customer getCustomer(long id) {
-        // todo
-        return null;
+        String sql = "SELECT * FROM customer WHERE name = 'jack'";
+
+        // 查询实体
+        return DatabaseHelper.queryEntity(Customer.class, sql);
     }
 
     /**

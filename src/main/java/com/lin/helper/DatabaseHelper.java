@@ -2,6 +2,7 @@ package com.lin.helper;
 
 import com.lin.utils.PropsUtil;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -99,9 +100,7 @@ public final class DatabaseHelper {
      * @param <T> 实体泛型
      * @return 实体列表
      */
-    public static <T> List<T> queryEntityList(Class<T> entityClass,
-                                              String sql,
-                                              Object... params) {
+    public static <T> List<T> queryEntityList(Class<T> entityClass, String sql, Object... params) {
         List<T> entityList;
 
         try {
@@ -116,6 +115,32 @@ public final class DatabaseHelper {
             closeConnection();
         }
         return entityList;
+    }
+
+    /**
+     * 查询实体
+     * @param entityClass 实体类型
+     * @param sql 执行的sql
+     * @param params sql对应的参数
+     * @param <T> 实体泛型
+     * @return 实体
+     */
+    public static <T> T queryEntity(Class<T> entityClass, String sql, Object... params) {
+        T entity;
+
+        try {
+            // 获取数据库连接
+            Connection conn = getConnection();
+            entity = QUERY_RUNNER.query(conn, sql, new BeanHandler<T>(entityClass), params);
+        } catch (SQLException e) {
+            LOGGER.error("查询实体失败", e);
+            throw new RuntimeException(e);
+        } finally {
+            // 关闭数据库连接
+            closeConnection();
+        }
+
+        return entity;
     }
 
 }
