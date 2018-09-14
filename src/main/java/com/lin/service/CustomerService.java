@@ -47,8 +47,7 @@ public class CustomerService {
      * @return 是否创建成功
      */
     public boolean createCustomer(Map<String, Object> fieldMap) {
-        // todo
-        return false;
+        return DatabaseHelper.insertEntity(Customer.class, fieldMap);
     }
 
     /**

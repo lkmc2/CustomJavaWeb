@@ -1,9 +1,11 @@
 package com.lin.helper;
 
+import com.lin.utils.CollectionUtil;
 import com.lin.utils.PropsUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -141,6 +144,97 @@ public final class DatabaseHelper {
         }
 
         return entity;
+    }
+
+    /**
+     * 执行查询语句（可连接多表查询）
+     * @param sql 查询语句
+     * @param params sql对应的参数
+     * @return 查询结果
+     */
+    public static List<Map<String, Object>> executeQuery(String sql, Object... params) {
+        List<Map<String, Object>> result;
+
+        try {
+            // 获取数据库连接
+            Connection conn = getConnection();
+            result = QUERY_RUNNER.query(conn, sql, new MapListHandler(), params);
+        } catch (SQLException e) {
+            LOGGER.error("执行查询失败", e);
+            throw new RuntimeException(e);
+        }
+
+        return result;
+    }
+
+    /**
+     * 执行更新语句（包括update、insert、delete）
+     * @param sql 执行的sql
+     * @param params sql对应的参数
+     * @return 受影响行数
+     */
+    public static int executeUpdate(String sql, Object... params) {
+        // 受影响行数
+        int rows = 0;
+
+        try {
+            // 获取数据库连接
+            Connection conn = getConnection();
+            rows = QUERY_RUNNER.update(conn, sql, params);
+        } catch (SQLException e) {
+            LOGGER.error("执行更新失败", e);
+            throw new RuntimeException(e);
+        } finally {
+            // 关闭数据库连接
+            closeConnection();
+        }
+        return rows;
+    }
+
+    /**
+     * 插入实体
+     * @param entityClass 实体类型
+     * @param fieldMap 对象信息
+     * @param <T> 实体泛型
+     * @return 是否插入成功
+     */
+    public static <T> boolean insertEntity(Class<T> entityClass, Map<String, Object> fieldMap) {
+        // 对象信息为空，插入失败
+        if (CollectionUtil.isEmpty(fieldMap)) {
+            LOGGER.error("不能插入实体：fieldMap为空");
+            return false;
+        }
+
+        String sql = "INSERT INTO " + getTableName(entityClass);
+        StringBuilder columns = new StringBuilder("(");
+        StringBuilder values = new StringBuilder("(");
+
+        for (String fieldName : fieldMap.keySet()) {
+            columns.append(fieldName).append(", ");
+            values.append("?, ");
+        }
+
+        // 将最后位置的逗号换成反括号
+        columns.replace(columns.lastIndexOf(", "), columns.length(), ")");
+        values.replace(values.lastIndexOf(", "), values.length(), ")");
+
+        // 拼接执行的sql
+        sql += columns + " VALUES " + values;
+
+        LOGGER.info("当前执行的SQL为：" + sql);
+
+        // 将对象信息的值转换成参数数组
+        Object[] params = fieldMap.values().toArray();
+
+
+        return executeUpdate(sql, params) == 1;
+    }
+
+    /**
+     * 根据实体类型获取对应的数据库表名
+     */
+    private static <T> String getTableName(Class<T> entityClass) {
+        return entityClass.getSimpleName();
     }
 
 }
