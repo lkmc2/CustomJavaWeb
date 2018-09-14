@@ -7,8 +7,6 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 /**
  * @author lkmc2
  * @date 2018/9/14
@@ -25,7 +23,7 @@ public class CustomerServiceTest {
 
     @Test
     public void getCustomerList() {
-        List<Customer> customerList = customerService.getCustomerList("jack");
+        List<Customer> customerList = customerService.getCustomerList();
         Assert.assertEquals(2, customerList.size());
     }
 
@@ -34,7 +32,6 @@ public class CustomerServiceTest {
         long id = 1;
         Customer customer = customerService.getCustomer(id);
         Assert.assertNotNull(customer);
-
     }
 
     @Test
