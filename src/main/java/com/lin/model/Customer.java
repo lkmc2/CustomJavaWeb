@@ -1,4 +1,4 @@
-package com.lin.entity;
+package com.lin.model;
 
 /**
  * @author lkmc2
