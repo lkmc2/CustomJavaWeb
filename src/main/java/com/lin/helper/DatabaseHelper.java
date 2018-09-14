@@ -2,6 +2,7 @@ package com.lin.helper;
 
 import com.lin.utils.CollectionUtil;
 import com.lin.utils.PropsUtil;
+import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
@@ -10,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,29 +27,32 @@ public final class DatabaseHelper {
     // 日志记录器
     private static final Logger LOGGER = LoggerFactory.getLogger(DatabaseHelper.class);
 
-    // 查询执行器
-    private static final QueryRunner QUERY_RUNNER = new QueryRunner();
-
     // 持有数据库连接的本地线程变量
-    private static final ThreadLocal<Connection> CONNECTION_HOLDER = new ThreadLocal<>();
+    private static final ThreadLocal<Connection> CONNECTION_HOLDER;
 
-    private static final String DRIVER; // 驱动名
-    private static final String URL; // 数据库链接
-    private static final String USERNAME; // 用户名
-    private static final String PASSWORD; // 密码
+    // 查询执行器
+    private static final QueryRunner QUERY_RUNNER;
+
+    // 数据库连接池
+    private static final BasicDataSource DATA_SOURCE;
+
 
     static {
-        Properties conf = PropsUtil.loadProps("db.properties");
-        DRIVER = conf.getProperty("jdbc.driver");
-        URL = conf.getProperty("jdbc.url");
-        USERNAME = conf.getProperty("jdbc.username");
-        PASSWORD = conf.getProperty("jdbc.password");
+        CONNECTION_HOLDER = new ThreadLocal<>();
+        QUERY_RUNNER = new QueryRunner();
 
-        try {
-            Class.forName(DRIVER);
-        } catch (ClassNotFoundException e) {
-            LOGGER.error("无法加载JDBC驱动", e);
-        }
+        Properties conf = PropsUtil.loadProps("db.properties");
+        String driver = conf.getProperty("jdbc.driver");
+        String url = conf.getProperty("jdbc.url");
+        String username = conf.getProperty("jdbc.username");
+        String password = conf.getProperty("jdbc.password");
+
+        // 设置数据库连接
+        DATA_SOURCE = new BasicDataSource();
+        DATA_SOURCE.setDriverClassName(driver);
+        DATA_SOURCE.setUrl(url);
+        DATA_SOURCE.setUsername(username);
+        DATA_SOURCE.setPassword(password);
     }
 
     /**
@@ -62,7 +65,8 @@ public final class DatabaseHelper {
         // 数据库连接为空
         if (conn == null) {
             try {
-                conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+                // 获取数据库连接
+                conn = DATA_SOURCE.getConnection();
             } catch (SQLException e) {
                 LOGGER.error("获取数据库连接失败", e);
                 throw new RuntimeException(e);
@@ -75,26 +79,6 @@ public final class DatabaseHelper {
         return conn;
     }
 
-    /**
-     * 关闭数据库连接
-     */
-    public static void closeConnection() {
-        // 获取本地线程的数据库连接
-        Connection conn = CONNECTION_HOLDER.get();
-
-        // 数据库连接不为空
-        if (conn != null) {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                LOGGER.error("关闭数据库连接失败", e);
-                throw new RuntimeException(e);
-            } finally {
-                // 移除本地线程的数据库连接
-                CONNECTION_HOLDER.remove();
-            }
-        }
-    }
 
     /**
      * 查询实体列表
@@ -114,10 +98,8 @@ public final class DatabaseHelper {
         } catch (Exception e) {
             LOGGER.error("查询实体列表失败", e);
             throw new RuntimeException(e);
-        } finally {
-            // 关闭数据库连接
-            closeConnection();
         }
+
         return entityList;
     }
 
@@ -139,9 +121,6 @@ public final class DatabaseHelper {
         } catch (SQLException e) {
             LOGGER.error("查询实体失败", e);
             throw new RuntimeException(e);
-        } finally {
-            // 关闭数据库连接
-            closeConnection();
         }
 
         return entity;
@@ -185,10 +164,8 @@ public final class DatabaseHelper {
         } catch (SQLException e) {
             LOGGER.error("执行更新失败", e);
             throw new RuntimeException(e);
-        } finally {
-            // 关闭数据库连接
-            closeConnection();
         }
+
         return rows;
     }
 

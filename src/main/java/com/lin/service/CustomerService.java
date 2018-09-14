@@ -35,7 +35,7 @@ public class CustomerService {
      * @return 指定id的客户
      */
     public Customer getCustomer(long id) {
-        String sql = "SELECT * FROM customer WHERE name = 'jack'";
+        String sql = String.format("SELECT * FROM customer WHERE id = '%s'", id);
 
         // 查询实体
         return DatabaseHelper.queryEntity(Customer.class, sql);
