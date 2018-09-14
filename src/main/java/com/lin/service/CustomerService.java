@@ -28,18 +28,10 @@ public class CustomerService {
      * @return 客户列表
      */
     public List<Customer> getCustomerList() {
-        // 获取数据库连接
-        Connection conn = DatabaseHelper.getConnection();
+        String sql = "SELECT * FROM customer";
 
-        try {
-            String sql = "SELECT * FROM customer";
-
-            // 查询实体列表
-            return DatabaseHelper.queryEntityList(Customer.class, conn, sql);
-        } finally {
-            // 关闭数据库连接
-            DatabaseHelper.closeConnection(conn);
-        }
+        // 查询实体列表
+        return DatabaseHelper.queryEntityList(Customer.class, sql);
     }
 
     /**

@@ -25,6 +25,9 @@ public final class DatabaseHelper {
     // 查询执行器
     private static final QueryRunner QUERY_RUNNER = new QueryRunner();
 
+    // 持有数据库连接的本地线程变量
+    private static final ThreadLocal<Connection> CONNECTION_HOLDER = new ThreadLocal<>();
+
     private static final String DRIVER; // 驱动名
     private static final String URL; // 数据库链接
     private static final String USERNAME; // 用户名
@@ -48,24 +51,42 @@ public final class DatabaseHelper {
      * 获取数据库连接
      */
     public static Connection getConnection() {
-        Connection conn = null;
-        try {
-            conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-        } catch (SQLException e) {
-            LOGGER.error("获取数据库连接失败", e);
+        // 获取本地线程的数据库连接
+        Connection conn = CONNECTION_HOLDER.get();
+
+        // 数据库连接为空
+        if (conn == null) {
+            try {
+                conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            } catch (SQLException e) {
+                LOGGER.error("获取数据库连接失败", e);
+                throw new RuntimeException(e);
+            } finally {
+                // 设置数据库连接到本地线程
+                CONNECTION_HOLDER.set(conn);
+            }
         }
+
         return conn;
     }
 
     /**
      * 关闭数据库连接
      */
-    public static void closeConnection(Connection conn) {
+    public static void closeConnection() {
+        // 获取本地线程的数据库连接
+        Connection conn = CONNECTION_HOLDER.get();
+
+        // 数据库连接不为空
         if (conn != null) {
             try {
                 conn.close();
             } catch (SQLException e) {
                 LOGGER.error("关闭数据库连接失败", e);
+                throw new RuntimeException(e);
+            } finally {
+                // 移除本地线程的数据库连接
+                CONNECTION_HOLDER.remove();
             }
         }
     }
@@ -73,25 +94,26 @@ public final class DatabaseHelper {
     /**
      * 查询实体列表
      * @param entityClass 实体类型
-     * @param conn 数据库连接
      * @param sql 执行的sql
      * @param params sql对应的参数
      * @param <T> 实体泛型
      * @return 实体列表
      */
     public static <T> List<T> queryEntityList(Class<T> entityClass,
-                                              Connection conn,
                                               String sql,
                                               Object... params) {
         List<T> entityList;
 
         try {
+            // 获取数据库连接
+            Connection conn = getConnection();
             entityList = QUERY_RUNNER.query(conn, sql, new BeanListHandler<T>(entityClass), params);
         } catch (Exception e) {
             LOGGER.error("查询实体列表失败", e);
             throw new RuntimeException(e);
         } finally {
-            closeConnection(conn);
+            // 关闭数据库连接
+            closeConnection();
         }
         return entityList;
     }
