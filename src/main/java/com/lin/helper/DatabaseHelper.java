@@ -45,7 +45,7 @@ public final class DatabaseHelper {
         CONNECTION_HOLDER = new ThreadLocal<>();
         QUERY_RUNNER = new QueryRunner();
 
-        Properties conf = PropsUtil.loadProps("db.properties");
+        Properties conf = PropsUtil.loadProps("smart.properties");
         String driver = conf.getProperty("jdbc.driver");
         String url = conf.getProperty("jdbc.url");
         String username = conf.getProperty("jdbc.username");
