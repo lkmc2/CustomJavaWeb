@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerCreateServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer_create.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,6 +19,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -51,38 +54,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomerServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1862">
-              <caret line="146" column="12" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -135,8 +107,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerCreateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer_create.jsp" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -308,7 +285,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -716,7 +693,7 @@
       <updated>1536850901799</updated>
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
-      <workItem from="1536901760433" duration="17034000" />
+      <workItem from="1536901760433" duration="17575000" />
     </task>
     <task id="LOCAL-00001" summary="设置编码相关的pom.xml配置">
       <created>1536851585454</created>
@@ -886,13 +863,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536923968712</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="添加用户信息展示Servlet">
+      <created>1536924971336</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1536924971336</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerServiceTest_getCustomer - 2018.09.14 at 18h 56m 15s.xml">
-      <configuration name="CustomerServiceTest.getCustomer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerServiceTest_createCustomer - 2018.09.14 at 18h 56m 37s.xml">
       <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
     </history-entry>
@@ -920,19 +901,21 @@
     <history-entry file="CustomerServiceTest - 2018.09.14 at 19h 18m 55s.xml">
       <configuration name="CustomerServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerServiceTest - 2018.09.14 at 19h 32m 25s.xml">
+      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22916000" />
+    <option name="totallyTimeSpent" value="23457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="RestServices" order="3" weight="0.32937685" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32903227" />
-      <window_info anchor="bottom" id="JRebel Console" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="7" sideWeight="0.5014837" side_tool="true" weight="0.40387097" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32937685" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="7" />
@@ -943,7 +926,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40387097" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49851632" weight="0.40387097" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -954,7 +937,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.4619355" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5652819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.54451036" />
+      <window_info anchor="bottom" id="Problems" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -1027,7 +1011,8 @@
     <MESSAGE value="完善删除实体的逻辑" />
     <MESSAGE value="为测试时添加专用的数据库配置" />
     <MESSAGE value="将执行sql文件的方法提取到DatabaseHelp中" />
-    <option name="LAST_COMMIT_MESSAGE" value="将执行sql文件的方法提取到DatabaseHelp中" />
+    <MESSAGE value="添加用户信息展示Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加用户信息展示Servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1359,16 +1344,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1862">
+        <state relative-caret-position="1634">
           <caret line="146" column="12" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1376,10 +1354,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer_create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="342">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1462,7 +1454,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: commons-dbutils:commons-dbutils:1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
