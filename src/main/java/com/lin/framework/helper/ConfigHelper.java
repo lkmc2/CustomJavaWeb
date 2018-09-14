@@ -9,7 +9,7 @@ import java.util.Properties;
  * @author lkmc2
  * @date 2018/9/14
  * @since 1.0.0
- * @description 配置文件帮助类
+ * @description 配置文件助手类
  */
 public final class ConfigHelper {
 
