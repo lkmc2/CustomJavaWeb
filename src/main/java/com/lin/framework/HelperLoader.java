@@ -14,6 +14,9 @@ import com.lin.framework.util.ClassUtil;
  */
 public final class HelperLoader {
 
+    /**
+     * 初始化相关Helper类
+     */
     public static void init() {
         Class<?>[] classList = {
                 ClassHelper.class,
