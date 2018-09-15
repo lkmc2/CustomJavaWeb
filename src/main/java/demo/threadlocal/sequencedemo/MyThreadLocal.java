@@ -1,4 +1,4 @@
-package demo.threadlocal;
+package demo.threadlocal.sequencedemo;
 
 import java.util.Collections;
 import java.util.HashMap;

@@ -7,10 +7,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/AutoProxyAspectClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/AutoProxyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/MeetingAroundAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/advisor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/auto_proxy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/auto_proxy_aspect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/meeting/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/advisor/meeting/impl/MeetingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAfterAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/GreetingAfterAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/GreetingAroundAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingBeforeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/GreetingBeforeAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingThrowAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/GreetingThrowAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/XmlClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/XmlClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/aop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/aop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/greeting/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/aspect/greeting/impl/GreetingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/cglib/CGLibProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/cglib/CGLibProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/cglib/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/hello/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/hello/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/hello/impl/HelloImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/hello/impl/HelloImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/jdk/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/jdk/DynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/jdk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/jdk/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/simple/HelloProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/proxy/simple/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/proxy/simple/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/AdvanceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/AdvanceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/ConfigClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/ConfigClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/TagClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/TagClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/annotation/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/FlyingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/ShowingTagAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/ShowingTagAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/SmileAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/SmileAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/SmileConfigAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/SmileConfigAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/flying/Flying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/flying/Flying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/flying/impl/FlyingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/flying/impl/FlyingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/run/Running.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/run/Running.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/run/RunningImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/run/RunningImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/show/Showing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/show/Showing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/show/impl/ShowingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/show/impl/ShowingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/smile/Smile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/smile/Smile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/entity/smile/impl/SmileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/smile/impl/SmileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/springaspect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspectconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/springaspect/springaspectconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/weaving/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/weaving/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/weaving/TalkingIntroAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/weaving/TalkingIntroAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/weaving/apology/Apology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/weaving/apology/Apology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/Talking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/weaving/greeting/Talking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/impl/TalkingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/weaving/greeting/impl/TalkingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aop/weaving/weaving.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,60 +104,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sequence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/Sequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/ClientThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceATest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceATest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyThreadLocal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="209">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#888#889#0" expanded="true" />
@@ -119,37 +118,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java">
+      <file leaf-file-name="AutoProxyAspectClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/AutoProxyAspectClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="247">
+              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoProxyClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/AutoProxyClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/cglib/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/jdk/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/simple/HelloProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/simple/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/ConfigClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#336#483#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceCTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java">
+      <file leaf-file-name="TalkingIntroAdvice.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/weaving/TalkingIntroAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceBTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="95">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -337,43 +385,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
-              <item name="sequence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
-              <item name="sequence" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -479,34 +490,34 @@
       </extension>
     </configuration>
     <configuration name="SequenceATest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.SequenceATest" />
+      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.sequencedemo.SequenceATest" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.threadlocal.sequence.impl.*" />
+          <option name="PATTERN" value="demo.threadlocal.sequencedemo.sequence.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="SequenceBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.SequenceBTest" />
+      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.sequencedemo.SequenceBTest" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.threadlocal.sequence.impl.*" />
+          <option name="PATTERN" value="demo.threadlocal.sequencedemo.sequence.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="SequenceCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.SequenceCTest" />
+      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.sequencedemo.SequenceCTest" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.threadlocal.*" />
+          <option name="PATTERN" value="demo.threadlocal.sequencedemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -689,20 +700,6 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-    </task>
-    <task id="LOCAL-00013" summary="添加属性文件工具类、类型转换工具类、字符串工具类">
-      <created>1536905149276</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1536905149276</updated>
-    </task>
-    <task id="LOCAL-00014" summary="添加集合工具类">
-      <created>1536905329213</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1536905329213</updated>
     </task>
     <task id="LOCAL-00015" summary="完善获取客户列表的逻辑">
       <created>1536912624766</created>
@@ -1033,7 +1030,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537022992590</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="添加自定义ThreadLocal的示例">
+      <created>1537024785731</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1537024785731</updated>
+    </task>
+    <task id="LOCAL-00063" summary="修改AOP相关内容的包结构">
+      <created>1537024955862</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1537024955862</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1069,11 +1080,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63373000" />
+    <option name="totallyTimeSpent" value="63652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="RestServices" order="3" weight="0.32937685" />
@@ -1103,7 +1113,7 @@
       <window_info anchor="bottom" id="Terminal" order="30" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="32" />
       <window_info anchor="bottom" id="Problems" order="3" weight="0.32903227" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5473373" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5473373" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -1185,8 +1195,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加HelperLoader来加载所有的Helper类" />
-    <MESSAGE value="进一步完善字符串工具类的方法" />
     <MESSAGE value="添加代理类例子" />
     <MESSAGE value="添加JDK动态代理的例子" />
     <MESSAGE value="将生成代理实例的方法转移到代理类中" />
@@ -1210,7 +1218,9 @@
     <MESSAGE value="添加线程测试列子" />
     <MESSAGE value="添加Java ThreadLocal的例子" />
     <MESSAGE value="修改ThreadLocal例子的包结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改ThreadLocal例子的包结构" />
+    <MESSAGE value="添加自定义ThreadLocal的示例" />
+    <MESSAGE value="修改AOP相关内容的包结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改AOP相关内容的包结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1218,69 +1228,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/DynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
@@ -1294,14 +1242,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/springaspect.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/annotation/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
@@ -1311,21 +1259,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/show/Showing.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/show/Showing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/flying/Flying.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/flying/Flying.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/flying/impl/FlyingImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/flying/impl/FlyingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
@@ -1336,21 +1284,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/show/impl/ShowingImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/show/impl/ShowingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/TagClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/TagClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/ShowingTagAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/ShowingTagAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
@@ -1364,28 +1312,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/smile/Smile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/smile/Smile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/run/Running.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/run/Running.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/run/RunningImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/run/RunningImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/AdvanceClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/AdvanceClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
@@ -1395,14 +1343,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/entity/smile/impl/SmileImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/smile/impl/SmileImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/SmileAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/SmileAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
@@ -1412,7 +1360,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/FlyingAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="36" column="5" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
@@ -1422,24 +1370,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/ConfigClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/springaspectconfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/springaspectconfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/SmileConfigAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/SmileConfigAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
@@ -1449,17 +1387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/advisor.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1578,7 +1509,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/ClientThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#222#223#0" expanded="true" />
             <element signature="e#262#263#0" expanded="true" />
@@ -1589,7 +1520,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -1621,18 +1552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1643,7 +1562,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#336#483#0" expanded="true" />
@@ -1654,11 +1573,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="152">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/AutoProxyAspectClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/AutoProxyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/advisor/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/cglib/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/jdk/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/simple/HelloProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/proxy/simple/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/ConfigClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/weaving/TalkingIntroAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>

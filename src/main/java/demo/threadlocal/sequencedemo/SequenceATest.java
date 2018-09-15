@@ -1,7 +1,7 @@
-package demo.threadlocal;
+package demo.threadlocal.sequencedemo;
 
-import demo.threadlocal.sequence.Sequence;
-import demo.threadlocal.sequence.impl.SequenceA;
+import demo.threadlocal.sequencedemo.sequence.Sequence;
+import demo.threadlocal.sequencedemo.sequence.impl.SequenceA;
 
 /**
  * @author lkmc2
