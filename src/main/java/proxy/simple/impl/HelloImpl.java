@@ -1,6 +1,6 @@
-package proxy.impl;
+package proxy.simple.impl;
 
-import proxy.Hello;
+import proxy.simple.Hello;
 
 /**
  * @author lkmc2
