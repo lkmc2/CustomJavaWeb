@@ -7,10 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/Flying.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,99 +59,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MeetingImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java">
+      <file leaf-file-name="FlyingAspect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="418">
+              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
               <folding>
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="advisor.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
+      <file leaf-file-name="springaspect.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="171">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoProxyClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auto_proxy.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="24" column="11" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="24" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auto_proxy_aspect.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoProxyAspectClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <caret line="120" column="36" lean-forward="true" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="361">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetingAroundAdvice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java">
+      <file leaf-file-name="FlyingImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="193">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Meeting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -176,6 +138,7 @@
       <find>db.</find>
       <find>config.properties</find>
       <find>meetingAdvisor</find>
+      <find>before</find>
     </findStrings>
     <replaceStrings>
       <replace>StringUtil</replace>
@@ -189,15 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/CodecUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/StreamUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/Hello.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/impl/HelloImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/HelloProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/simple/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/hello/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" />
@@ -205,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingBeforeAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAfterAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/Greeting.java" />
@@ -240,6 +193,16 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/Meeting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/Flying.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/impl/FlyingImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/ShowingAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/aspectj_autoproxy.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" />
       </list>
     </option>
   </component>
@@ -337,7 +300,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="advisor" type="462c0819:PsiDirectoryNode" />
+              <item name="springaspect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -346,7 +309,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="weaving" type="462c0819:PsiDirectoryNode" />
+              <item name="springaspect" type="462c0819:PsiDirectoryNode" />
+              <item name="flying" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -355,28 +319,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="weaving" type="462c0819:PsiDirectoryNode" />
-              <item name="apology" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="weaving" type="462c0819:PsiDirectoryNode" />
-              <item name="greeting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="weaving" type="462c0819:PsiDirectoryNode" />
-              <item name="greeting" type="462c0819:PsiDirectoryNode" />
+              <item name="springaspect" type="462c0819:PsiDirectoryNode" />
+              <item name="flying" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,15 +364,16 @@
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.springaspect" />
       <recent name="demo.advisor" />
       <recent name="com.lin.framework.annotation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\springaspect" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\weaving" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\webapp\WEB-INF\jsp" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\com\lin\controller" />
-      <recent name="F:\IntellJ Project\CustomJavaWeb\src\test\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.lin.utils" />
@@ -452,7 +397,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AutoProxyAspectClient">
+  <component name="RunManager" selected="Application.Client (2)">
     <configuration name="AutoProxyAspectClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.advisor.AutoProxyAspectClient" />
       <module name="CustomJavaWeb" />
@@ -486,13 +431,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.aspect.Client" />
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.springaspect.Client" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.aspect.*" />
+          <option name="PATTERN" value="demo.springaspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -668,19 +613,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.XmlClient" />
       <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.AutoProxyClient" />
       <item itemvalue="Application.AutoProxyAspectClient" />
+      <item itemvalue="Application.Client (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.AutoProxyAspectClient" />
         <item itemvalue="Application.AutoProxyClient" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.XmlClient" />
       </list>
     </recent_temporary>
   </component>
@@ -697,13 +642,6 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-    </task>
-    <task id="LOCAL-00003" summary="添加Servlet、JSP和JSTL的依赖">
-      <created>1536852131585</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1536852131585</updated>
     </task>
     <task id="LOCAL-00004" summary="添加Servlet和jsp页面">
       <created>1536853067538</created>
@@ -1041,7 +979,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537003099327</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="添加Spring AOP自动代理（扫描切面配置）的例子">
+      <created>1537003526836</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1537003526836</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1077,7 +1022,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47818000" />
+    <option name="totallyTimeSpent" value="49977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1115,6 +1060,7 @@
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32903227" />
       <window_info id="Learn" order="2" weight="0.32937685" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1141,7 +1087,6 @@
       <window_info anchor="bottom" id="Tail" order="26" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Problems" order="4" weight="0.32903227" />
@@ -1193,7 +1138,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加配置文件帮助类" />
     <MESSAGE value="添加类操作工具类" />
     <MESSAGE value="添加控制器等必要注解" />
     <MESSAGE value="添加类操作助手类" />
@@ -1218,63 +1162,15 @@
     <MESSAGE value="添加使用Spring Weaving动态给对象实现接口的例子" />
     <MESSAGE value="添加对切面（类中的特定方法）进行拦截处理的例子" />
     <MESSAGE value="添加Spring AOP自动代理的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加Spring AOP自动代理的例子" />
+    <MESSAGE value="添加Spring AOP自动代理（扫描切面配置）的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Spring AOP自动代理（扫描切面配置）的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/util/StreamUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/hello/impl/HelloImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1293,23 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/DynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#742#772#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,13 +1270,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1632,7 +1504,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
+        <state relative-caret-position="95">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
@@ -1659,20 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1682,8 +1540,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="247">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/Flying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="120" column="36" lean-forward="true" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
