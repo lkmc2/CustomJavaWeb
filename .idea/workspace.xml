@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/weaving/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/weaving/GreetingIntroAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/weaving/apology/Apology.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/Talking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/impl/TalkingImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,65 +58,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Apology.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/apology/Apology.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GreetingIntroAdvice.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/GreetingIntroAdvice.java">
+      <file leaf-file-name="MeetingImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weaving.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml">
+      <file leaf-file-name="advisor.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="209">
+              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="81">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MeetingAroundAdvice.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TalkingImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/greeting/impl/TalkingImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Talking.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/greeting/Talking.java">
+      <file leaf-file-name="Meeting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
@@ -147,6 +141,7 @@
       <find>logg</find>
       <find>db.</find>
       <find>config.properties</find>
+      <find>meetingAdvisor</find>
     </findStrings>
     <replaceStrings>
       <replace>StringUtil</replace>
@@ -160,16 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/ArrayUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/IocHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Handler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/ControllerHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/ClassUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Param.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/View.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Data.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/HelperLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/StreamUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/CodecUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/JsonUtil.java" />
@@ -207,10 +192,20 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/weaving/GreetingIntroAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/Greeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/impl/GreetingImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/weaving/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/impl/TalkingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/weaving/greeting/Talking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/weaving/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/weaving/TalkingIntroAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/Greeting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/Metting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/Meetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/Meeting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/impl/MeetingImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/Client.java" />
       </list>
     </option>
   </component>
@@ -308,6 +303,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="advisor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="weaving" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,20 +379,25 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.lin.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.lin.utils" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.advisor" />
       <recent name="com.lin.framework.annotation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\weaving" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\webapp\WEB-INF\jsp" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\com\lin\controller" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\test\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lin.utils" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -410,6 +419,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Client (1)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.advisor.Client" />
+      <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.advisor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.aspect.Client" />
       <module name="CustomJavaWeb" />
@@ -623,10 +643,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -980,7 +1000,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536999375337</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="添加使用Spring Weaving动态给对象实现接口的例子">
+      <created>1537001054552</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1537001054552</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1016,10 +1043,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45231000" />
+    <option name="totallyTimeSpent" value="46914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="RestServices" order="3" weight="0.32937685" />
@@ -1049,7 +1077,7 @@
       <window_info anchor="bottom" id="Terminal" order="30" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="32" />
       <window_info anchor="bottom" id="Problems" order="3" weight="0.32903227" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5473373" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5473373" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -1131,7 +1159,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将执行sql文件的方法提取到DatabaseHelp中" />
     <MESSAGE value="添加用户信息展示Servlet" />
     <MESSAGE value="删除多余文件" />
     <MESSAGE value="添加配置文件帮助类" />
@@ -1156,7 +1183,8 @@
     <MESSAGE value="添加Spring AOP环绕增加的例子" />
     <MESSAGE value="添加使用xml以及包扫描配置Spring AOP的例子" />
     <MESSAGE value="添加抛出增强类" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加抛出增强类" />
+    <MESSAGE value="添加使用Spring Weaving动态给对象实现接口的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加使用Spring Weaving动态给对象实现接口的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1164,60 +1192,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/HelperLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/ConfigHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/javax/servlet/ServletContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/BeanHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding>
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/util/CodecUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Param.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1593,27 +1567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/greeting/Talking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1628,14 +1585,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/GreetingIntroAdvice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="551">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/TalkingIntroAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#537#538#0" expanded="true" />
             <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
           </folding>
         </state>
       </provider>
