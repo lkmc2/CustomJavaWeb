@@ -1,4 +1,4 @@
-package demo.springaspect;
+package demo.springaspect.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -8,19 +8,14 @@ import org.springframework.stereotype.Component;
 /**
  * @author lkmc2
  * @date 2018/9/15
- * @description 飞行切面（Spring + AspectJ，基于注解：通过AspectJ execution表达式拦截方法）
+ * @description 表演标签切面（Spring + AspectJ，基于注解：通过AspectJ @annotation表达式拦截方法）
  */
 @Aspect
 @Component
-public class FlyingAspect {
+public class ShowingTagAspect {
 
-    /*
-     * execution表达式
-     * 第一个 * 表示返回值
-     * 第二个 * 表示方法名
-     * (..) 表示方法参数，任何参数都可以
-     */
-    @Around("execution(* demo.springaspect.flying.impl.FlyingImpl.*(..))")
+    // 拦截带有@Tag注解的方法
+    @Around("@annotation(demo.springaspect.annotation.Tag)")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         before();
         Object result = pjp.proceed();

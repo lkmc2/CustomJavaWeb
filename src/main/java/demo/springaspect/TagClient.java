@@ -1,29 +1,32 @@
 package demo.springaspect;
 
 
-import demo.advisor.meeting.impl.MeetingImpl;
-import demo.springaspect.flying.impl.FlyingImpl;
+import demo.springaspect.show.impl.ShowingImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author lkmc2
  * @date 2018/9/15
- * @description 客户端
+ * @description 标签客户端
  */
-public class Client {
+public class TagClient {
 
     public static void main(String[] args) {
         ApplicationContext context
                 = new ClassPathXmlApplicationContext("demo/springaspect/springaspect.xml");
 
-        FlyingImpl flyingImpl = (FlyingImpl) context.getBean("flyingImpl");
-        flyingImpl.flying("Wang");
+        ShowingImpl showingImpl = (ShowingImpl) context.getBean("showingImpl");
+        showingImpl.showing("Swift");
+        showingImpl.laughing("Wang");
+
+        // 这里将对带有@Tag注解的laughing方法进行拦截，并在其执行前后进行处理
 
         /*
             运行结果：
+            I am showing! Swift
             Before
-            I am showing! Wang
+            Let's start laugh! Wang
             After
          */
     }

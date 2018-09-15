@@ -7,13 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/Flying.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/TagClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/ShowingTagAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/show/Showing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/show/impl/ShowingImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingAspect.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,10 +61,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="FlyingAspect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+            <state relative-caret-position="95">
+              <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
@@ -75,29 +76,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="springaspect.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml">
+      <file leaf-file-name="ShowingTagAspect.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/ShowingTagAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="133">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Tag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="120" column="36" lean-forward="true" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="285">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,12 +107,39 @@
       <file leaf-file-name="FlyingImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="285">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TagClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/TagClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowingImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/show/impl/ShowingImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Showing.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/show/Showing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -122,9 +151,9 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Jsp File" />
-        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -152,14 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/hello/Hello.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingBeforeAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAfterAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/Greeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/Greeting.java" />
@@ -198,11 +219,19 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/impl/FlyingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/ShowingAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/aspectj_autoproxy.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingTagAsepct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingTagAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/show/Flying.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/show/Showing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/show/ShowingImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/ShowingTagAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/TagClient.java" />
       </list>
     </option>
   </component>
@@ -310,18 +339,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="springaspect" type="462c0819:PsiDirectoryNode" />
-              <item name="flying" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="springaspect" type="462c0819:PsiDirectoryNode" />
-              <item name="flying" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -369,11 +387,11 @@
       <recent name="com.lin.framework.annotation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\springaspect\show" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\springaspect" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\weaving" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\webapp\WEB-INF\jsp" />
-      <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\com\lin\controller" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.lin.utils" />
@@ -397,7 +415,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (2)">
+  <component name="RunManager" selected="Application.TagClient">
     <configuration name="AutoProxyAspectClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.advisor.AutoProxyAspectClient" />
       <module name="CustomJavaWeb" />
@@ -431,13 +449,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.springaspect.Client" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.springaspect.*" />
+          <option name="PATTERN" value="demo.springaspect.aspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,13 +471,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="XmlClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.aspect.XmlClient" />
+    <configuration name="TagClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.springaspect.TagClient" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.aspect.*" />
+          <option name="PATTERN" value="demo.springaspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -613,18 +631,18 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.XmlClient" />
       <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.AutoProxyClient" />
       <item itemvalue="Application.AutoProxyAspectClient" />
       <item itemvalue="Application.Client (2)" />
+      <item itemvalue="Application.TagClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TagClient" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.AutoProxyAspectClient" />
         <item itemvalue="Application.AutoProxyClient" />
-        <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client (1)" />
       </list>
     </recent_temporary>
@@ -642,13 +660,6 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-    </task>
-    <task id="LOCAL-00004" summary="添加Servlet和jsp页面">
-      <created>1536853067538</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1536853067538</updated>
     </task>
     <task id="LOCAL-00005" summary="添加.gitignore文件">
       <created>1536853261703</created>
@@ -986,7 +997,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537003526836</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="添加Spring + AspectJ，基于注解：通过AspectJ execution表达式拦截方法的例子">
+      <created>1537006185452</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1537006185453</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1022,7 +1040,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49977000" />
+    <option name="totallyTimeSpent" value="51039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1138,7 +1156,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加类操作工具类" />
     <MESSAGE value="添加控制器等必要注解" />
     <MESSAGE value="添加类操作助手类" />
     <MESSAGE value="添加反射工具类" />
@@ -1163,7 +1180,8 @@
     <MESSAGE value="添加对切面（类中的特定方法）进行拦截处理的例子" />
     <MESSAGE value="添加Spring AOP自动代理的例子" />
     <MESSAGE value="添加Spring AOP自动代理（扫描切面配置）的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加Spring AOP自动代理（扫描切面配置）的例子" />
+    <MESSAGE value="添加Spring + AspectJ，基于注解：通过AspectJ execution表达式拦截方法的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Spring + AspectJ，基于注解：通过AspectJ execution表达式拦截方法的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1171,47 +1189,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.2.8/cglib-3.2.8.jar!/net/sf/cglib/proxy/Enhancer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="499" column="25" selection-start-line="499" selection-start-column="25" selection-end-line="499" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/hello/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1571,42 +1548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/Flying.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="456">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1619,8 +1564,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="228">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/show/Showing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/Flying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/flying/impl/FlyingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/show/impl/ShowingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/TagClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/ShowingTagAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
