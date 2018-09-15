@@ -1,7 +1,7 @@
 package proxy.jdk;
 
-import proxy.simple.Hello;
-import proxy.simple.impl.HelloImpl;
+import proxy.hello.Hello;
+import proxy.hello.impl.HelloImpl;
 
 /**
  * @author lkmc2
@@ -11,7 +11,7 @@ import proxy.simple.impl.HelloImpl;
 public class Main {
 
     public static void main(String[] args) {
-
+        // JDK动态代理类
         DynamicProxy dynamicProxy = new DynamicProxy(new HelloImpl());
 
         Hello helloProxy = dynamicProxy.getProxy();

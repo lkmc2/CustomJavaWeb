@@ -1,6 +1,7 @@
-package proxy.simple;
+package proxy.cglib;
 
 import proxy.hello.Hello;
+import proxy.hello.impl.HelloImpl;
 
 /**
  * @author lkmc2
@@ -10,7 +11,9 @@ import proxy.hello.Hello;
 public class Main {
 
     public static void main(String[] args) {
-        Hello helloProxy = new HelloProxy();
+        CGLibProxy cgLibProxy = new CGLibProxy();
+
+        Hello helloProxy = cgLibProxy.getProxy(HelloImpl.class);
         helloProxy.say("Jack");
 
         /*

@@ -1,4 +1,4 @@
-package proxy.simple;
+package proxy.hello;
 
 /**
  * @author lkmc2
