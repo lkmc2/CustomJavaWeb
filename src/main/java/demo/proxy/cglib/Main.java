@@ -1,7 +1,7 @@
-package proxy.cglib;
+package demo.proxy.cglib;
 
-import proxy.hello.Hello;
-import proxy.hello.impl.HelloImpl;
+import demo.proxy.hello.Hello;
+import demo.proxy.hello.impl.HelloImpl;
 
 /**
  * @author lkmc2

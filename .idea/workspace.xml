@@ -69,7 +69,7 @@
         </entry>
       </file>
       <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/hello/Hello.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/hello/Hello.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -78,7 +78,7 @@
         </entry>
       </file>
       <file leaf-file-name="HelloImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/hello/impl/HelloImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/hello/impl/HelloImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
               <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="34" />
@@ -90,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/HelloProxy.java">
+      <file leaf-file-name="HelloProxy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="31" column="5" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="e#207#208#0" expanded="true" />
                 <element signature="e#245#246#0" expanded="true" />
@@ -108,7 +108,7 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -117,7 +117,7 @@
         </entry>
       </file>
       <file leaf-file-name="DynamicProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/DynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
@@ -136,7 +136,7 @@
         </entry>
       </file>
       <file leaf-file-name="CGLibProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/CGLibProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="499">
               <caret line="45" column="40" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="40" />
@@ -156,8 +156,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
               <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
@@ -178,7 +178,7 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
               <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
@@ -223,8 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/test/resources/sql/customer_init.sql" />
         <option value="$PROJECT_DIR$/src/test/java/com/lin/service/CustomerServiceTest.java" />
@@ -274,6 +272,8 @@
         <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java" />
       </list>
     </option>
   </component>
@@ -362,6 +362,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,33 +379,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="cglib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="jdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
               <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -547,35 +530,35 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main (2)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proxy.jdk.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.proxy.simple.Main" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="proxy.jdk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proxy.cglib.Main" />
-      <module name="CustomJavaWeb" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="proxy.cglib.*" />
+          <option name="PATTERN" value="demo.proxy.hello.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proxy.simple.Main" />
+      <option name="MAIN_CLASS_NAME" value="demo.proxy.jdk.Main" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="proxy.hello.*" />
+          <option name="PATTERN" value="demo.proxy.jdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.proxy.cglib.Main" />
+      <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.proxy.cglib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1099,7 +1082,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536988719494</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="为CGLib代理类实例单例模式简化代码">
+      <created>1536988900511</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1536988900511</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1135,7 +1125,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39289000" />
+    <option name="totallyTimeSpent" value="39578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1250,7 +1240,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="通过ThreadLocal持有Connection数据库连接，简化打开和关闭数据库连接的代码" />
     <MESSAGE value="完善查询实体的逻辑" />
     <MESSAGE value="完善插入实体的逻辑" />
     <MESSAGE value="完善更新实体的逻辑" />
@@ -1275,7 +1264,8 @@
     <MESSAGE value="添加JDK动态代理的例子" />
     <MESSAGE value="将生成代理实例的方法转移到代理类中" />
     <MESSAGE value="添加CGLib动态代理类例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加CGLib动态代理类例子" />
+    <MESSAGE value="为CGLib代理类实例单例模式简化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="为CGLib代理类实例单例模式简化代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1608,7 +1598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/hello/impl/HelloImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/hello/impl/HelloImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="34" />
@@ -1619,22 +1609,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/HelloProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="31" column="5" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -1655,14 +1630,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/hello/Hello.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/hello/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/DynamicProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
@@ -1679,7 +1654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/jdk/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
@@ -1689,7 +1664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/CGLibProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="45" column="40" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="40" />
@@ -1708,12 +1683,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/simple/HelloProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
           </folding>
         </state>
       </provider>

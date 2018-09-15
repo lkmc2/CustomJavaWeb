@@ -1,12 +1,12 @@
-package proxy.simple;
+package demo.proxy.simple;
 
-import proxy.hello.Hello;
-import proxy.hello.impl.HelloImpl;
+import demo.proxy.hello.Hello;
+import demo.proxy.hello.impl.HelloImpl;
 
 /**
  * @author lkmc2
  * @date 2018/9/15
- * @description 打招呼代理类
+ * @description 打招呼代理类（静态代理）
  */
 public class HelloProxy implements Hello {
 

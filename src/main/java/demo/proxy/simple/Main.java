@@ -1,6 +1,6 @@
-package proxy.simple;
+package demo.proxy.simple;
 
-import proxy.hello.Hello;
+import demo.proxy.hello.Hello;
 
 /**
  * @author lkmc2
