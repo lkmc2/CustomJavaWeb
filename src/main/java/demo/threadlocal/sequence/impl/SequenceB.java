@@ -5,7 +5,7 @@ import demo.threadlocal.sequence.Sequence;
 /**
  * @author lkmc2
  * @date 2018/9/15
- * @description 序列B（使用ThreadLocal保证线程安全）
+ * @description 序列B（使用jdk自带的ThreadLocal保证线程安全）
  */
 public class SequenceB implements Sequence {
 

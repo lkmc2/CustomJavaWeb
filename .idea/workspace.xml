@@ -7,11 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/threadlocal/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceATest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,10 +57,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Sequence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/Sequence.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/Sequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="133">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -70,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/ClientThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#222#223#0" expanded="true" />
                 <element signature="e#262#263#0" expanded="true" />
@@ -80,10 +79,10 @@
         </entry>
       </file>
       <file leaf-file-name="SequenceA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceA.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -92,16 +91,56 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceATest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceB.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceB.java">
+      <file leaf-file-name="SequenceB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="133">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyThreadLocal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#336#483#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceCTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +149,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -147,7 +186,7 @@
       <replace>isNotEmpty</replace>
     </replaceStrings>
     <dirStrings>
-      <dir />
+      <dir>F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -157,11 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/Meeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/Flying.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/meeting/impl/FlyingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/ShowingAspect.java" />
@@ -208,6 +242,11 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceB.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceATest.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/SequenceB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java" />
       </list>
     </option>
   </component>
@@ -312,6 +351,27 @@
               <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
+              <item name="sequence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
+              <item name="sequence" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -349,10 +409,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="demo.threadlocal" />
+      <recent name="demo.threadlocal.sequence.impl" />
       <recent name="demo.springaspect" />
       <recent name="demo.springaspect.aspect" />
       <recent name="demo.advisor" />
-      <recent name="com.lin.framework.annotation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\springaspect" />
@@ -384,7 +444,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SequenceBTest">
+  <component name="RunManager" selected="Application.SequenceCTest">
     <configuration name="AdvanceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.springaspect.AdvanceClient" />
       <module name="CustomJavaWeb" />
@@ -440,13 +500,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="TagClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.springaspect.TagClient" />
+    <configuration name="SequenceCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.SequenceCTest" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.springaspect.*" />
+          <option name="PATTERN" value="demo.threadlocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -600,19 +660,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.TagClient" />
       <item itemvalue="Application.AdvanceClient" />
       <item itemvalue="Application.ConfigClient" />
       <item itemvalue="Application.SequenceATest" />
       <item itemvalue="Application.SequenceBTest" />
+      <item itemvalue="Application.SequenceCTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SequenceCTest" />
         <item itemvalue="Application.SequenceBTest" />
         <item itemvalue="Application.SequenceATest" />
         <item itemvalue="Application.ConfigClient" />
         <item itemvalue="Application.AdvanceClient" />
-        <item itemvalue="Application.TagClient" />
       </list>
     </recent_temporary>
   </component>
@@ -629,20 +689,6 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-    </task>
-    <task id="LOCAL-00011" summary="添加log4j日志记录相关配置">
-      <created>1536902590384</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1536902590384</updated>
-    </task>
-    <task id="LOCAL-00012" summary="添加mysql相关配置">
-      <created>1536902874822</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1536902874822</updated>
     </task>
     <task id="LOCAL-00013" summary="添加属性文件工具类、类型转换工具类、字符串工具类">
       <created>1536905149276</created>
@@ -973,7 +1019,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537022241507</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="添加Java ThreadLocal的例子">
+      <created>1537022898424</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1537022898424</updated>
+    </task>
+    <task id="LOCAL-00061" summary="修改ThreadLocal例子的包结构">
+      <created>1537022992590</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1537022992590</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1009,7 +1069,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62005000" />
+    <option name="totallyTimeSpent" value="63373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1125,8 +1185,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加封装Action信息类" />
-    <MESSAGE value="添加控制器助手类" />
     <MESSAGE value="添加HelperLoader来加载所有的Helper类" />
     <MESSAGE value="进一步完善字符串工具类的方法" />
     <MESSAGE value="添加代理类例子" />
@@ -1150,7 +1208,9 @@
     <MESSAGE value="搭建代理框架" />
     <MESSAGE value="加载自定义AOP框架" />
     <MESSAGE value="添加线程测试列子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加线程测试列子" />
+    <MESSAGE value="添加Java ThreadLocal的例子" />
+    <MESSAGE value="修改ThreadLocal例子的包结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改ThreadLocal例子的包结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,47 +1218,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/TalkingIntroAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/weaving/weaving.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1556,17 +1575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/Sequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/ClientThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#222#223#0" expanded="true" />
             <element signature="e#262#263#0" expanded="true" />
@@ -1574,31 +1586,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceATest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/Sequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#336#483#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
