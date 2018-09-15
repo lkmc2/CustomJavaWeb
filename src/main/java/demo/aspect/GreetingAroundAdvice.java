@@ -2,12 +2,14 @@ package demo.aspect;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
+import org.springframework.stereotype.Component;
 
 /**
  * @author lkmc2
  * @date 2018/9/15
  * @description
  */
+@Component
 public class GreetingAroundAdvice implements MethodInterceptor {
 
     @Override

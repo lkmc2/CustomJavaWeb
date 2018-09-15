@@ -7,9 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/aspect/XmlClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/aspect/aop.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aspect/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +61,8 @@
       <file leaf-file-name="GreetingAroundAdvice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="209">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,8 +73,8 @@
       <file leaf-file-name="CGLibProxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/CGLibProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="26" selection-start-line="26" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="342">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1020#1021#0" expanded="true" />
@@ -81,11 +84,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/Client.java">
+      <file leaf-file-name="XmlClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/XmlClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="475">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aop.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/aop.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GreetingImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,6 +126,7 @@
         <option value="Jsp File" />
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -127,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer_create.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/helper/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/ConfigConstant.java" />
         <option value="$PROJECT_DIR$/src/main/resources/smart.properties" />
@@ -175,9 +198,11 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAfterAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/Greeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/Greeting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/aspect/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/aspect/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/aspect/aop.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/aspect/XmlClient.java" />
       </list>
     </option>
   </component>
@@ -363,7 +388,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.XmlClient">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.aspect.Client" />
       <module name="CustomJavaWeb" />
@@ -408,31 +433,19 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="CustomerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XmlClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.aspect.XmlClient" />
       <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lin.service.*" />
+          <option name="PATTERN" value="demo.aspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lin.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lin.service.CustomerServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -580,19 +593,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="JUnit.CustomerServiceTest" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.XmlClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CustomerServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -925,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536990139518</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="添加Spring AOP环绕增加的例子">
+      <created>1536990517328</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1536990517328</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -961,7 +981,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40722000" />
+    <option name="totallyTimeSpent" value="41941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -969,33 +989,33 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="RestServices" order="3" weight="0.32937685" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="10" weight="0.32903227" />
-      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.5014837" side_tool="true" weight="0.40387097" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.32903227" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.5014837" side_tool="true" weight="0.40387097" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32937685" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Executor" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="21" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="23" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="bottom" id="Tail" order="25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32937685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49851632" weight="0.40387097" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49851632" weight="0.40387097" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Messages" order="27" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.32908162" />
+      <window_info anchor="bottom" id="Java Enterprise" order="28" weight="0.32908162" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.59438777" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.4619355" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" order="17" weight="0.34580645" />
-      <window_info anchor="bottom" id="MyBatis Sql Log" order="18" />
-      <window_info anchor="bottom" id="Problems" order="1" weight="0.32903227" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5474777" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.5909677" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.4619355" />
+      <window_info anchor="bottom" id="Spring" order="1" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="30" weight="0.34580645" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="32" />
+      <window_info anchor="bottom" id="Problems" order="3" weight="0.32903227" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5474777" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -1004,43 +1024,43 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32937685" />
-      <window_info anchor="bottom" id="Terminal" order="17" weight="0.34580645" />
+      <window_info anchor="bottom" id="Terminal" order="31" weight="0.34580645" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="MyBatis Sql Log" order="18" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="33" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.54451036" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="TODO" order="14" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Learn" order="2" weight="0.32937685" />
-      <window_info anchor="bottom" id="JRebel Executor" order="13" />
-      <window_info anchor="bottom" id="Application Servers" order="10" weight="0.32903227" />
-      <window_info anchor="bottom" id="Database Console" order="19" weight="0.32903227" />
+      <window_info anchor="bottom" id="JRebel Executor" order="24" />
+      <window_info anchor="bottom" id="Application Servers" order="18" weight="0.32903227" />
+      <window_info anchor="bottom" id="Database Console" order="34" weight="0.32903227" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32937685" />
-      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="bottom" id="Tail" order="26" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32903227" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Problems" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Problems" order="4" weight="0.32903227" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.32908162" />
-      <window_info anchor="bottom" id="JRebel Console" order="11" sideWeight="0.5014837" side_tool="true" weight="0.40387097" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" visible="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Java Enterprise" order="29" weight="0.32908162" />
+      <window_info anchor="bottom" id="JRebel Console" order="20" sideWeight="0.5014837" side_tool="true" weight="0.40387097" />
+      <window_info anchor="bottom" id="Database Changes" order="22" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" visible="true" weight="0.32903227" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.4619355" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.4619355" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49851632" weight="0.40387097" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49851632" weight="0.40387097" />
       <window_info anchor="right" id="RestServices" order="3" weight="0.32937685" />
     </layout>
   </component>
@@ -1077,7 +1097,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完善更新实体的逻辑" />
     <MESSAGE value="完善删除实体的逻辑" />
     <MESSAGE value="为测试时添加专用的数据库配置" />
     <MESSAGE value="将执行sql文件的方法提取到DatabaseHelp中" />
@@ -1102,7 +1121,8 @@
     <MESSAGE value="为CGLib代理类实例单例模式简化代码" />
     <MESSAGE value="移动代理示范例子到特定包下" />
     <MESSAGE value="使用Spring AOP为对象添加前置和后置增强方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Spring AOP为对象添加前置和后置增强方法" />
+    <MESSAGE value="添加Spring AOP环绕增加的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Spring AOP环绕增加的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1110,20 +1130,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/ConfigConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1646">
-          <caret line="428" column="9" lean-forward="true" selection-start-line="428" selection-start-column="9" selection-end-line="428" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FilenameFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-176">
@@ -1501,17 +1507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/greeting/Greeting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1548,8 +1543,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/GreetingAroundAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/aop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/XmlClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1558,8 +1580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/proxy/cglib/CGLibProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="26" selection-start-line="26" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="342">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1020#1021#0" expanded="true" />
@@ -1568,10 +1590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aspect/greeting/impl/GreetingImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
