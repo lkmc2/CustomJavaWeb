@@ -1,4 +1,4 @@
-package demo.springaspect.flying;
+package demo.springaspect.entity.flying;
 
 /**
  * @author lkmc2

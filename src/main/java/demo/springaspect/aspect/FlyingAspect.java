@@ -20,7 +20,7 @@ public class FlyingAspect {
      * 第二个 * 表示方法名
      * (..) 表示方法参数，任何参数都可以
      */
-    @Around("execution(* demo.springaspect.flying.impl.FlyingImpl.*(..))")
+    @Around("execution(* demo.springaspect.entity.flying.impl.FlyingImpl.*(..))")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         before();
         Object result = pjp.proceed();

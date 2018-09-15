@@ -1,7 +1,7 @@
 package demo.springaspect;
 
 
-import demo.springaspect.show.impl.ShowingImpl;
+import demo.springaspect.entity.show.impl.ShowingImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

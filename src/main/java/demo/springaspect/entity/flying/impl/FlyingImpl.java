@@ -1,7 +1,6 @@
-package demo.springaspect.flying.impl;
+package demo.springaspect.entity.flying.impl;
 
-import demo.springaspect.flying.Flying;
-import org.springframework.context.annotation.Bean;
+import demo.springaspect.entity.flying.Flying;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,7 +13,7 @@ public class FlyingImpl implements Flying {
 
     @Override
     public void flying(String name) {
-        System.out.println("I am flying! " + name);
+        System.out.println("I am running! " + name);
     }
 
 }

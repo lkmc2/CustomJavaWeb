@@ -1,8 +1,7 @@
 package demo.springaspect;
 
 
-import demo.advisor.meeting.impl.MeetingImpl;
-import demo.springaspect.flying.impl.FlyingImpl;
+import demo.springaspect.entity.flying.impl.FlyingImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

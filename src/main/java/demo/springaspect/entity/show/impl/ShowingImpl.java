@@ -1,7 +1,7 @@
-package demo.springaspect.show.impl;
+package demo.springaspect.entity.show.impl;
 
 import demo.springaspect.annotation.Tag;
-import demo.springaspect.show.Showing;
+import demo.springaspect.entity.show.Showing;
 import org.springframework.stereotype.Component;
 
 /**
