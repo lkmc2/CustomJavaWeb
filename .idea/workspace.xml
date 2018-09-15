@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/meeting/Meeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/meeting/impl/MeetingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,8 +74,26 @@
       <file leaf-file-name="advisor.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="266">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoProxyClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auto_proxy.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -93,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetingAroundAdvice.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MeetingAroundAdvice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+            <state relative-caret-position="133">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="e#698#699#0" expanded="true" />
                 <element signature="e#754#755#0" expanded="true" />
@@ -155,8 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/StreamUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/CodecUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/JsonUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/CodecUtil.java" />
@@ -203,9 +215,11 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/Meeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/greeting/impl/MeetingImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAdvice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" />
       </list>
     </option>
   </component>
@@ -418,7 +432,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RunManager" selected="Application.AutoProxyClient">
+    <configuration name="AutoProxyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.advisor.AutoProxyClient" />
+      <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.advisor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.advisor.Client" />
       <module name="CustomJavaWeb" />
@@ -448,17 +473,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="demo.weaving.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.proxy.jdk.Main" />
-      <module name="CustomJavaWeb" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.proxy.jdk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -634,19 +648,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.XmlClient" />
       <item itemvalue="Application.Client (1)" />
+      <item itemvalue="Application.AutoProxyClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AutoProxyClient" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.XmlClient" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -663,13 +677,6 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-    </task>
-    <task id="LOCAL-00001" summary="设置编码相关的pom.xml配置">
-      <created>1536851585454</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1536851585454</updated>
     </task>
     <task id="LOCAL-00002" summary="填完web项目所需目录和web.xml文件">
       <created>1536851813418</created>
@@ -1007,7 +1014,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537001054552</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="添加对切面（类中的特定方法）进行拦截处理的例子">
+      <created>1537002568794</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1537002568795</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1043,7 +1057,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46914000" />
+    <option name="totallyTimeSpent" value="47345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1159,7 +1173,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加用户信息展示Servlet" />
     <MESSAGE value="删除多余文件" />
     <MESSAGE value="添加配置文件帮助类" />
     <MESSAGE value="添加类操作工具类" />
@@ -1184,7 +1197,8 @@
     <MESSAGE value="添加使用xml以及包扫描配置Spring AOP的例子" />
     <MESSAGE value="添加抛出增强类" />
     <MESSAGE value="添加使用Spring Weaving动态给对象实现接口的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加使用Spring Weaving动态给对象实现接口的例子" />
+    <MESSAGE value="添加对切面（类中的特定方法）进行拦截处理的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加对切面（类中的特定方法）进行拦截处理的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,28 +1206,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Param.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/bean/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -1650,17 +1642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/MeetingAroundAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        <state relative-caret-position="133">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="e#698#699#0" expanded="true" />
             <element signature="e#754#755#0" expanded="true" />
@@ -1669,6 +1654,27 @@
             <element signature="e#903#904#0" expanded="true" />
             <element signature="e#960#961#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
