@@ -7,6 +7,7 @@ package demo.threadlocal;
  */
 public class SequenceA implements Sequence {
 
+    // static无法保证线程安全
     private static int number = 0;
 
     @Override
