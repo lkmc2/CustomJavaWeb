@@ -186,7 +186,7 @@
       <replace>isNotEmpty</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor</dir>
+      <dir />
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -446,12 +446,12 @@
   </component>
   <component name="RunManager" selected="Application.SequenceCTest">
     <configuration name="AdvanceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.springaspect.AdvanceClient" />
+      <option name="MAIN_CLASS_NAME" value="demo.aop.springaspect.AdvanceClient" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.springaspect.*" />
+          <option name="PATTERN" value="demo.aop.springaspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -468,12 +468,12 @@
       </extension>
     </configuration>
     <configuration name="ConfigClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.springaspect.ConfigClient" />
+      <option name="MAIN_CLASS_NAME" value="demo.aop.springaspect.ConfigClient" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.springaspect.*" />
+          <option name="PATTERN" value="demo.aop.springaspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
