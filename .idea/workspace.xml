@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,17 +76,17 @@
       <file leaf-file-name="advisor.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="209">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoProxyClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutoProxyClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="38">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -92,8 +94,26 @@
       <file leaf-file-name="auto_proxy.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="342">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="24" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auto_proxy_aspect.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoProxyAspectClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -169,8 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/CodecUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/JsonUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/util/StreamUtil.java" />
@@ -219,7 +237,9 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java" />
       </list>
     </option>
   </component>
@@ -432,7 +452,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AutoProxyClient">
+  <component name="RunManager" selected="Application.AutoProxyAspectClient">
+    <configuration name="AutoProxyAspectClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.advisor.AutoProxyAspectClient" />
+      <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.advisor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="AutoProxyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.advisor.AutoProxyClient" />
       <module name="CustomJavaWeb" />
@@ -473,17 +504,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="demo.weaving.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.proxy.cglib.Main" />
-      <module name="CustomJavaWeb" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.proxy.cglib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -648,19 +668,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.XmlClient" />
       <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.AutoProxyClient" />
+      <item itemvalue="Application.AutoProxyAspectClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AutoProxyAspectClient" />
         <item itemvalue="Application.AutoProxyClient" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.XmlClient" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -677,13 +697,6 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-    </task>
-    <task id="LOCAL-00002" summary="填完web项目所需目录和web.xml文件">
-      <created>1536851813418</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1536851813418</updated>
     </task>
     <task id="LOCAL-00003" summary="添加Servlet、JSP和JSTL的依赖">
       <created>1536852131585</created>
@@ -1021,7 +1034,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537002568795</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="添加Spring AOP自动代理的例子">
+      <created>1537003099327</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1537003099327</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1057,7 +1077,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47345000" />
+    <option name="totallyTimeSpent" value="47818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1173,7 +1193,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除多余文件" />
     <MESSAGE value="添加配置文件帮助类" />
     <MESSAGE value="添加类操作工具类" />
     <MESSAGE value="添加控制器等必要注解" />
@@ -1198,7 +1217,8 @@
     <MESSAGE value="添加抛出增强类" />
     <MESSAGE value="添加使用Spring Weaving动态给对象实现接口的例子" />
     <MESSAGE value="添加对切面（类中的特定方法）进行拦截处理的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加对切面（类中的特定方法）进行拦截处理的例子" />
+    <MESSAGE value="添加Spring AOP自动代理的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Spring AOP自动代理的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1206,31 +1226,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/bean/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/ControllerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/util/StreamUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1657,24 +1652,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="209">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/advisor.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="342">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/auto_proxy_aspect.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="38">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/advisor/AutoProxyAspectClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>

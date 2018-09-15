@@ -8,13 +8,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * @author lkmc2
  * @date 2018/9/15
- * @description 自动代理（扫描Bean名称）客户端
+ * @description 自动代理（扫描切面配置）客户端
  */
-public class AutoProxyClient {
+public class AutoProxyAspectClient {
 
     public static void main(String[] args) {
         ApplicationContext context
-                = new ClassPathXmlApplicationContext("demo/advisor/auto_proxy.xml");
+                = new ClassPathXmlApplicationContext("demo/advisor/auto_proxy_aspect.xml");
 
         MeetingImpl meetingImpl = (MeetingImpl) context.getBean("meetingImpl");
         meetingImpl.sayHi("Jack");

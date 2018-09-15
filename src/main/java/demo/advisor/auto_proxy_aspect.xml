@@ -14,24 +14,20 @@
         <property name="pattern" value="demo.advisor.meeting.impl.MeetingImpl.good.*"/>
     </bean>
 
-    <!--自动代理（扫描Bean名称）-->
-    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
-        <!--只为后缀是Impl的Bean生成代理-->
-       <property name="beanNames" value="*Impl"/>
-        <!--切面-->
-        <property name="interceptorNames" value="meetingAdvisor"/>
+    <!--自动代理（扫描切面配置）：该类可以扫描所有的切面，并为其自动生成代理-->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
         <!--是否对代理生成策略进行优化-->
         <property name="optimize" value="true"/>
     </bean>
 
-    <!--&lt;!&ndash;配置一个代理&ndash;&gt;-->
-    <!--<bean id="meetingProxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
-        <!--&lt;!&ndash;目标类&ndash;&gt;-->
-        <!--<property name="target" ref="meetingImpl"/>-->
+    <!--&lt;!&ndash;自动代理（扫描Bean名称）&ndash;&gt;-->
+    <!--<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">-->
+        <!--&lt;!&ndash;只为后缀是Impl的Bean生成代理&ndash;&gt;-->
+        <!--<property name="beanNames" value="*Impl"/>-->
         <!--&lt;!&ndash;切面&ndash;&gt;-->
         <!--<property name="interceptorNames" value="meetingAdvisor"/>-->
-        <!--&lt;!&ndash;代理目标类&ndash;&gt;-->
-        <!--<property name="proxyTargetClass" value="true"/>-->
+        <!--&lt;!&ndash;是否对代理生成策略进行优化&ndash;&gt;-->
+        <!--<property name="optimize" value="true"/>-->
     <!--</bean>-->
 
 </beans>
