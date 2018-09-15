@@ -13,6 +13,9 @@ import java.lang.reflect.Method;
  */
 public class CGLibProxy implements MethodInterceptor {
 
+    // 单例实例
+    private static final CGLibProxy INSTANCE = new CGLibProxy();
+
     @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
         before();
@@ -35,6 +38,13 @@ public class CGLibProxy implements MethodInterceptor {
     @SuppressWarnings("unchecked")
     public <T> T getProxy(Class<?> cls) {
         return (T) Enhancer.create(cls, this);
+    }
+
+    /**
+     * 获取动态代理类的实例
+     */
+    public static CGLibProxy getInstance() {
+        return INSTANCE;
     }
 
 }

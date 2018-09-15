@@ -11,9 +11,8 @@ import proxy.hello.impl.HelloImpl;
 public class Main {
 
     public static void main(String[] args) {
-        CGLibProxy cgLibProxy = new CGLibProxy();
-
-        Hello helloProxy = cgLibProxy.getProxy(HelloImpl.class);
+        // CGLib动态代理
+        Hello helloProxy = CGLibProxy.getInstance().getProxy(HelloImpl.class);
         helloProxy.say("Jack");
 
         /*

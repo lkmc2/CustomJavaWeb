@@ -7,14 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/simple/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/hello/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/simple/HelloProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/simple/HelloProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/simple/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/simple/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/simple/impl/HelloImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/hello/impl/HelloImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -143,8 +138,8 @@
       <file leaf-file-name="CGLibProxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="499">
+              <caret line="45" column="40" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#439#440#0" expanded="true" />
@@ -154,6 +149,8 @@
                 <element signature="e#769#799#0" expanded="true" />
                 <element signature="e#840#841#0" expanded="true" />
                 <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,8 +159,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="304">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,8 +180,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="456">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -272,10 +269,10 @@
         <option value="$PROJECT_DIR$/src/main/java/proxy/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/simple/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/hello/Hello.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java" />
       </list>
     </option>
@@ -1095,7 +1092,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536988170426</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="添加CGLib动态代理类例子">
+      <created>1536988719493</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1536988719494</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1131,7 +1135,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39044000" />
+    <option name="totallyTimeSpent" value="39289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1246,7 +1250,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="使用Apache Commons DbUtils简化数据库代码的编写" />
     <MESSAGE value="通过ThreadLocal持有Connection数据库连接，简化打开和关闭数据库连接的代码" />
     <MESSAGE value="完善查询实体的逻辑" />
     <MESSAGE value="完善插入实体的逻辑" />
@@ -1271,7 +1274,8 @@
     <MESSAGE value="添加代理类例子" />
     <MESSAGE value="添加JDK动态代理的例子" />
     <MESSAGE value="将生成代理实例的方法转移到代理类中" />
-    <option name="LAST_COMMIT_MESSAGE" value="将生成代理实例的方法转移到代理类中" />
+    <MESSAGE value="添加CGLib动态代理类例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加CGLib动态代理类例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1637,16 +1641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1685,10 +1679,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/CGLibProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="499">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#439#440#0" expanded="true" />
@@ -1698,14 +1702,16 @@
             <element signature="e#769#799#0" expanded="true" />
             <element signature="e#840#841#0" expanded="true" />
             <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/proxy/cglib/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
