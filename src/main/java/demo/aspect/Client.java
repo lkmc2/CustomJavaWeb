@@ -26,6 +26,20 @@ public class Client {
             Hi! Andy
             After
          */
+
+        ProxyFactory aroundProxyFactory = new ProxyFactory(); // 创建代理工厂
+        aroundProxyFactory.setTarget(new GreetingImpl()); // 设置目标类对象
+        aroundProxyFactory.addAdvice(new GreetingAroundAdvice()); // 添加环绕增强
+
+        Greeting aroundGreeting = (Greeting) aroundProxyFactory.getProxy();
+        aroundGreeting.sayHi("Luck");
+
+        /*
+            运行结果：
+            Before
+            Hi! Luck
+            After
+         */
     }
 
 }
