@@ -3,8 +3,6 @@ package proxy.jdk;
 import proxy.simple.Hello;
 import proxy.simple.impl.HelloImpl;
 
-import java.lang.reflect.Proxy;
-
 /**
  * @author lkmc2
  * @date 2018/9/15
@@ -13,16 +11,10 @@ import java.lang.reflect.Proxy;
 public class Main {
 
     public static void main(String[] args) {
-        Hello hello = new HelloImpl();
 
-        DynamicProxy dynamicProxy = new DynamicProxy(hello);
+        DynamicProxy dynamicProxy = new DynamicProxy(new HelloImpl());
 
-        Hello helloProxy = (Hello) Proxy.newProxyInstance(
-                hello.getClass().getClassLoader(),
-                hello.getClass().getInterfaces(),
-                dynamicProxy
-        );
-
+        Hello helloProxy = dynamicProxy.getProxy();
         helloProxy.say("Jack");
 
         /*

@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/simple/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/HelloProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/simple/HelloProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/simple/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/impl/HelloImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/simple/impl/HelloImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -143,8 +140,8 @@
       <file leaf-file-name="DynamicProxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="532">
+              <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#291#292#0" expanded="true" />
@@ -153,6 +150,7 @@
                 <element signature="e#555#556#0" expanded="true" />
                 <element signature="e#583#584#0" expanded="true" />
                 <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#742#772#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,8 +159,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="342">
+              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1056,7 +1054,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536987574012</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="添加JDK动态代理的例子">
+      <created>1536987933586</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1536987933586</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1092,7 +1097,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38291000" />
+    <option name="totallyTimeSpent" value="38532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1207,7 +1212,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完善获取客户列表的逻辑" />
     <MESSAGE value="编写DatabaseHelper，简化获取数据库连接的过程" />
     <MESSAGE value="使用Apache Commons DbUtils简化数据库代码的编写" />
     <MESSAGE value="通过ThreadLocal持有Connection数据库连接，简化打开和关闭数据库连接的代码" />
@@ -1232,7 +1236,8 @@
     <MESSAGE value="添加HelperLoader来加载所有的Helper类" />
     <MESSAGE value="进一步完善字符串工具类的方法" />
     <MESSAGE value="添加代理类例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加代理类例子" />
+    <MESSAGE value="添加JDK动态代理的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加JDK动态代理的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1616,13 +1621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/HelloProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1638,10 +1636,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/simple/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/DynamicProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="532">
+          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#291#292#0" expanded="true" />
@@ -1650,14 +1655,15 @@
             <element signature="e#555#556#0" expanded="true" />
             <element signature="e#583#584#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#742#772#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/proxy/jdk/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="342">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
