@@ -147,7 +147,7 @@
       <replace>isNotEmpty</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor</dir>
+      <dir />
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -424,7 +424,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.threadlocal.*" />
+          <option name="PATTERN" value="demo.threadlocal.sequence.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -435,7 +435,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.threadlocal.*" />
+          <option name="PATTERN" value="demo.threadlocal.sequence.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

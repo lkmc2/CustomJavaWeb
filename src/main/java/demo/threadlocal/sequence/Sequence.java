@@ -1,4 +1,4 @@
-package demo.threadlocal;
+package demo.threadlocal.sequence;
 
 /**
  * @author lkmc2

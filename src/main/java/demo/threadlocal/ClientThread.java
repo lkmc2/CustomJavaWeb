@@ -1,5 +1,7 @@
 package demo.threadlocal;
 
+import demo.threadlocal.sequence.Sequence;
+
 /**
  * @author lkmc2
  * @date 2018/9/15
