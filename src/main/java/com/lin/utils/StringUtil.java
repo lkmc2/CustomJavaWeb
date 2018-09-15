@@ -27,7 +27,12 @@ public final class StringUtil {
         return !isEmpty(str);
     }
 
-    public static String[] splitString(String body, String s) {
-        return new String[0];
+
+    /**
+     * 切割字符串
+     */
+    public static String[] splitString(String source, String splitWord) {
+        return source.split(splitWord);
     }
+
 }
