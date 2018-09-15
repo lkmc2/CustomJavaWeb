@@ -4,6 +4,7 @@ import com.lin.framework.annotation.Controller;
 import com.lin.framework.annotation.Service;
 import com.lin.framework.util.ClassUtil;
 
+import java.lang.annotation.Annotation;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -77,6 +78,38 @@ public final class ClassHelper {
         beanClassSet.addAll(getControllerClassSet());
 
         return beanClassSet;
+    }
+
+    /**
+     * 获取应用包名下某父类（或接口）的所有子类（或实现类）
+     */
+    public static Set<Class<?>> getClassSetBySuper(Class<?> superClass) {
+        Set<Class<?>> classSet = new HashSet<>();
+
+        for (Class<?> cls : CLASS_SET) {
+            // 若cls是superClass的子类，并且两者不相等
+            if (superClass.isAssignableFrom(cls) && !superClass.equals(cls)) {
+                classSet.add(cls);
+            }
+        }
+
+        return classSet;
+    }
+
+    /**
+     * 获取应用包名下带有某注解的所有类
+     */
+    public static Set<Class<?>> getClassSetByAnnotation(Class<? extends Annotation> annotationClass) {
+        Set<Class<?>> classSet = new HashSet<>();
+
+        for (Class<?> cls : CLASS_SET) {
+            // 该类带有指定类型的注解
+            if (cls.isAnnotationPresent(annotationClass)) {
+                classSet.add(cls);
+            }
+        }
+
+        return classSet;
     }
 
 }

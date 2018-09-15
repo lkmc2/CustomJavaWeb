@@ -1,9 +1,6 @@
 package com.lin.framework;
 
-import com.lin.framework.helper.BeanHelper;
-import com.lin.framework.helper.ClassHelper;
-import com.lin.framework.helper.ControllerHelper;
-import com.lin.framework.helper.IocHelper;
+import com.lin.framework.helper.*;
 import com.lin.framework.util.ClassUtil;
 
 /**
@@ -21,6 +18,7 @@ public final class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IocHelper.class,
                 ControllerHelper.class
         };
