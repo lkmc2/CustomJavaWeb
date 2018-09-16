@@ -1,9 +1,11 @@
 package com.lin.framework.helper;
 
 import com.lin.framework.annotation.Aspect;
+import com.lin.framework.annotation.Service;
 import com.lin.framework.proxy.AspectProxy;
 import com.lin.framework.proxy.Proxy;
 import com.lin.framework.proxy.ProxyManger;
+import com.lin.framework.proxy.TransactionProxy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,32 +51,53 @@ public final class AopHelper {
      * 创建代理Map
      */
     private static Map<Class<?>, Set<Class<?>>> createProxyMap() throws Exception {
-        HashMap<Class<?>, Set<Class<?>>> proxyMap = new HashMap<>();
-        // 获取集成了AspectProxy类的类的集合
-        Set<Class<?>> proxyClassSet = ClassHelper.getClassSetBySuper(AspectProxy.class);
+        Map<Class<?>, Set<Class<?>>> proxyMap = new HashMap<>();
 
-        for (Class<?> proxyClass : proxyClassSet) {
-            // 类中包含Aspect注解
-            if (proxyClass.isAnnotationPresent(Aspect.class)) {
-                Aspect aspect = proxyClass.getAnnotation(Aspect.class);
+        // 添加切面代理
+        addAspectProxy(proxyMap);
 
-                // 获取带Aspect注解的类的集合
-                Set<Class<?>> targetClassSet = createTargetClassSet(aspect);
-
-                // 存入代理Map中
-                proxyMap.put(proxyClass, targetClassSet);
-            }
-        }
+        // 添加事务代理
+        addTransactionProxy(proxyMap);
 
         return proxyMap;
     }
 
     /**
-     * 获取带Aspect注解的类的集合
-     * @param aspect 切面
-     * @return 带Aspect注解的类的集合
+     * 添加切面代理
      */
-    private static Set<Class<?>> createTargetClassSet(Aspect aspect) throws Exception {
+    private static void addAspectProxy(Map<Class<?>, Set<Class<?>>> proxyMap) {
+        // 获取继承了AspectProxy类的子类集合
+        Set<Class<?>> proxyClassSet = ClassHelper.getClassSetBySuper(AspectProxy.class);
+
+        for (Class<?> proxyClass : proxyClassSet) {
+            // 该代理类包含Aspect注解
+            if (proxyClass.isAnnotationPresent(Aspect.class)) {
+                Aspect aspect = proxyClass.getAnnotation(Aspect.class);
+
+                // 获取带指定Aspect注解的类的集合
+                Set<Class<?>> targetClassSet = createTargetClassSet(aspect);
+
+                proxyMap.put(proxyClass, targetClassSet);
+            }
+        }
+    }
+
+    /**
+     * 添加事务代理
+     */
+    private static void addTransactionProxy(Map<Class<?>, Set<Class<?>>> proxyMap) {
+        // 获取带Service注解的类的集合
+        Set<Class<?>> serviceClassSet = ClassHelper.getClassSetByAnnotation(Service.class);
+
+        proxyMap.put(TransactionProxy.class, serviceClassSet);
+    }
+
+    /**
+     * 获取带指定Aspect注解的类的集合
+     * @param aspect 切面
+     * @return 带指定Aspect注解的类的集合
+     */
+    private static Set<Class<?>> createTargetClassSet(Aspect aspect) {
         Set<Class<?>> targetClassSet = new HashSet<>();
         Class<? extends Annotation> annotation = aspect.value();
 
