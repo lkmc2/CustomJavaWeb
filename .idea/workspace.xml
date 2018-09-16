@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+            <state relative-caret-position="1582">
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,8 +90,30 @@
       <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="171">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ClientThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding>
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestThreadMain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -141,8 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java" />
@@ -189,9 +206,11 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java" />
       </list>
     </option>
   </component>
@@ -301,13 +320,6 @@
               <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
               <item name="dbutil" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -342,11 +354,11 @@
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.threadlocal.dbutil" />
       <recent name="demo.threadlocal" />
       <recent name="demo.threadlocal.sequence.impl" />
       <recent name="demo.springaspect" />
       <recent name="demo.springaspect.aspect" />
-      <recent name="demo.advisor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\springaspect" />
@@ -378,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestMain">
+  <component name="RunManager" selected="Application.TestThreadMain">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.weaving.Client" />
       <module name="CustomJavaWeb" />
@@ -386,17 +398,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="demo.weaving.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="ConfigClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.aop.springaspect.ConfigClient" />
-      <module name="CustomJavaWeb" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.aop.springaspect.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -436,6 +437,17 @@
     </configuration>
     <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.threadlocal.dbutil.TestMain" />
+      <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.threadlocal.dbutil.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TestThreadMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.threadlocal.dbutil.TestThreadMain" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -594,19 +606,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.ConfigClient" />
       <item itemvalue="Application.SequenceATest" />
       <item itemvalue="Application.SequenceBTest" />
       <item itemvalue="Application.SequenceCTest" />
       <item itemvalue="Application.TestMain" />
+      <item itemvalue="Application.TestThreadMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestThreadMain" />
         <item itemvalue="Application.TestMain" />
         <item itemvalue="Application.SequenceCTest" />
         <item itemvalue="Application.SequenceBTest" />
         <item itemvalue="Application.SequenceATest" />
-        <item itemvalue="Application.ConfigClient" />
       </list>
     </recent_temporary>
   </component>
@@ -623,14 +635,7 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-      <workItem from="1537067579116" duration="1866000" />
-    </task>
-    <task id="LOCAL-00016" summary="编写DatabaseHelper，简化获取数据库连接的过程">
-      <created>1536913061215</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1536913061215</updated>
+      <workItem from="1537067579116" duration="2241000" />
     </task>
     <task id="LOCAL-00017" summary="使用Apache Commons DbUtils简化数据库代码的编写">
       <created>1536914036290</created>
@@ -968,7 +973,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537025156509</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="添加单线程执行的DBUtil示例">
+      <created>1537069664323</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1537069664324</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1004,7 +1016,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66205000" />
+    <option name="totallyTimeSpent" value="66580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1033,7 +1045,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="29" weight="0.32908162" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32774192" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.4619355" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.4619355" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="31" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="33" />
@@ -1087,7 +1099,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加JDK动态代理的例子" />
     <MESSAGE value="将生成代理实例的方法转移到代理类中" />
     <MESSAGE value="添加CGLib动态代理类例子" />
     <MESSAGE value="为CGLib代理类实例单例模式简化代码" />
@@ -1112,7 +1123,8 @@
     <MESSAGE value="添加自定义ThreadLocal的示例" />
     <MESSAGE value="修改AOP相关内容的包结构" />
     <MESSAGE value="修改ThreadLocal示例的包结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改ThreadLocal示例的包结构" />
+    <MESSAGE value="添加单线程执行的DBUtil示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加单线程执行的DBUtil示例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1124,20 +1136,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/flying/impl/FlyingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/entity/show/impl/ShowingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/TagClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1435,6 +1433,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1479,20 +1480,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="81" column="39" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+        <state relative-caret-position="1582">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ClientThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
