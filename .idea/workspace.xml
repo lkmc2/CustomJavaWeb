@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ClientThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,8 +112,8 @@
       <file leaf-file-name="TestThreadMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="133">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -160,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/FlyingAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/springaspect.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/annotation/Tag.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/springaspect/aspect/FlyingTagAsepct.java" />
@@ -206,10 +205,11 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/RightTestThreadMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java" />
       </list>
     </option>
@@ -635,14 +635,7 @@
       <workItem from="1536850907024" duration="2761000" />
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
-      <workItem from="1537067579116" duration="2241000" />
-    </task>
-    <task id="LOCAL-00017" summary="使用Apache Commons DbUtils简化数据库代码的编写">
-      <created>1536914036290</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1536914036290</updated>
+      <workItem from="1537067579116" duration="2820000" />
     </task>
     <task id="LOCAL-00018" summary="通过ThreadLocal持有Connection数据库连接，简化打开和关闭数据库连接的代码">
       <created>1536914655778</created>
@@ -980,7 +973,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537069664324</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="添加多线程执行的DBUtil示例">
+      <created>1537070058768</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1537070058769</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1016,7 +1016,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66580000" />
+    <option name="totallyTimeSpent" value="67159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="711" y="0" width="736" height="907" extended-state="0" />
@@ -1099,7 +1099,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将生成代理实例的方法转移到代理类中" />
     <MESSAGE value="添加CGLib动态代理类例子" />
     <MESSAGE value="为CGLib代理类实例单例模式简化代码" />
     <MESSAGE value="移动代理示范例子到特定包下" />
@@ -1124,7 +1123,8 @@
     <MESSAGE value="修改AOP相关内容的包结构" />
     <MESSAGE value="修改ThreadLocal示例的包结构" />
     <MESSAGE value="添加单线程执行的DBUtil示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加单线程执行的DBUtil示例" />
+    <MESSAGE value="添加多线程执行的DBUtil示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加多线程执行的DBUtil示例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,13 +1136,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/TagClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/aop/springaspect/aspect/ShowingTagAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1470,16 +1463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1582">
@@ -1508,10 +1491,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/RightTestThreadMain.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
