@@ -58,55 +58,63 @@ public class DispatcherServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 获取请求方法和请求路径
-        String requestMethod = request.getMethod().toLowerCase();
-        String requestPath = request.getPathInfo();
+        // 初始化Servlet助手类
+        ServletHelper.init(request, response);
 
-        // 请求网站图标，结束方法
-        if (requestPath.equals("/favicon.ico")) {
-            return;
-        }
+        try {
+            // 获取请求方法和请求路径
+            String requestMethod = request.getMethod().toLowerCase();
+            String requestPath = request.getPathInfo();
 
-        // 获取Action处理器
-        Handler handler = ControllerHelper.getHandler(requestMethod, requestPath);
-
-        if (handler != null) {
-            // 获取Controller类及其Bean实例
-            Class<?> controllerClass = handler.getControllerClass();
-            Object controllerBean = BeanHelper.getBean(controllerClass);
-
-            // 请求参数对象
-            Param param;
-
-            if (UploadHelper.isMultipart(request)) {
-                // 请求为 Multipart 类型，用文件上传助手创建参数
-                param = UploadHelper.createParam(request);
-            } else {
-                // 请求不为 Multipart 类型，使用请求助手创建参数
-                param = RequestHelper.createParam(request);
+            // 请求网站图标，结束方法
+            if (requestPath.equals("/favicon.ico")) {
+                return;
             }
 
-            // 调用请求方法
-            Method actionMethod = handler.getActionMethod();
+            // 获取Action处理器
+            Handler handler = ControllerHelper.getHandler(requestMethod, requestPath);
 
-            // 方法执行结果
-            Object result;
+            if (handler != null) {
+                // 获取Controller类及其Bean实例
+                Class<?> controllerClass = handler.getControllerClass();
+                Object controllerBean = BeanHelper.getBean(controllerClass);
 
-            // 请求参数为空时，调用方法是不传入参数
-            if (param.isEmpty()) {
-                result = ReflectionUtil.invokeMethod(controllerBean, actionMethod);
-            } else {
-                result = ReflectionUtil.invokeMethod(controllerBean, actionMethod, param);
+                // 请求参数对象
+                Param param;
+
+                if (UploadHelper.isMultipart(request)) {
+                    // 请求为 Multipart 类型，用文件上传助手创建参数
+                    param = UploadHelper.createParam(request);
+                } else {
+                    // 请求不为 Multipart 类型，使用请求助手创建参数
+                    param = RequestHelper.createParam(request);
+                }
+
+                // 调用请求方法
+                Method actionMethod = handler.getActionMethod();
+
+                // 方法执行结果
+                Object result;
+
+                // 请求参数为空时，调用方法是不传入参数
+                if (param.isEmpty()) {
+                    result = ReflectionUtil.invokeMethod(controllerBean, actionMethod);
+                } else {
+                    result = ReflectionUtil.invokeMethod(controllerBean, actionMethod, param);
+                }
+
+                // 处理Action方法的返回值
+                if (result instanceof View) {
+                    // 返回JSP页面
+                    handleViewResult((View) result, request, response);
+                } else if (result instanceof Data) {
+                    // 返回JSON数据
+                    handelDataResult((Data) result, response);
+                }
             }
-
-            // 处理Action方法的返回值
-            if (result instanceof View) {
-                // 返回JSP页面
-                handleViewResult((View) result, request, response);
-            } else if (result instanceof Data) {
-                // 返回JSON数据
-                handelDataResult((Data) result, response);
-            }
+        } finally {
+            // 销毁Servlet助手类
+            ServletHelper.destroy();
         }
     }
 
