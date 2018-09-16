@@ -1,6 +1,7 @@
 package com.lin.service;
 
-import com.lin.helper.DatabaseHelper;
+import com.lin.framework.helper.DatabaseHelper;
+import com.lin.framework.service.CustomerService;
 import com.lin.model.Customer;
 import org.junit.Before;
 import org.junit.Test;

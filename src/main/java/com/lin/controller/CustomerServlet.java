@@ -1,7 +1,7 @@
 package com.lin.controller;
 
 import com.lin.model.Customer;
-import com.lin.service.CustomerService;
+import com.lin.framework.service.CustomerService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

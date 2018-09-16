@@ -1,4 +1,4 @@
-package com.lin.helper;
+package com.lin.framework.helper;
 
 import com.lin.utils.CollectionUtil;
 import com.lin.utils.PropsUtil;

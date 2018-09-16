@@ -1,6 +1,8 @@
-package com.lin.service;
+package com.lin.framework.service;
 
-import com.lin.helper.DatabaseHelper;
+import com.lin.framework.annotation.Service;
+import com.lin.framework.annotation.Transaction;
+import com.lin.framework.helper.DatabaseHelper;
 import com.lin.model.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,10 +15,8 @@ import java.util.Map;
  * @date 2018/9/14
  * @description 客户服务
  */
+@Service
 public class CustomerService {
-
-    // 日志记录器
-    private static final Logger LOGGER = LoggerFactory.getLogger(CustomerService.class);
 
     /**
      * 获取客户列表
@@ -35,10 +35,10 @@ public class CustomerService {
      * @return 指定id的客户
      */
     public Customer getCustomer(long id) {
-        String sql = String.format("SELECT * FROM customer WHERE id = '%s'", id);
+        String sql = "SELECT * FROM customer WHERE id = ?";
 
         // 查询实体
-        return DatabaseHelper.queryEntity(Customer.class, sql);
+        return DatabaseHelper.queryEntity(Customer.class, sql, id);
     }
 
     /**
@@ -46,6 +46,7 @@ public class CustomerService {
      * @param fieldMap 存储用户信息的map
      * @return 是否创建成功
      */
+    @Transaction
     public boolean createCustomer(Map<String, Object> fieldMap) {
         return DatabaseHelper.insertEntity(Customer.class, fieldMap);
     }
@@ -56,6 +57,7 @@ public class CustomerService {
      * @param fieldMap 存储用户信息的map
      * @return 是否更新成功
      */
+    @Transaction
     public boolean updateCustomer(long id, Map<String, Object> fieldMap) {
         return DatabaseHelper.updateEntity(Customer.class, id, fieldMap);
     }
@@ -65,6 +67,7 @@ public class CustomerService {
      * @param id 客户id
      * @return 是否删除成功
      */
+    @Transaction
     public boolean deleteCustomer(long id) {
         return DatabaseHelper.deleteEntity(Customer.class, id);
     }
