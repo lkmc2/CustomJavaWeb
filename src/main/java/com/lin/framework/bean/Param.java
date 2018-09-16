@@ -1,6 +1,7 @@
 package com.lin.framework.bean;
 
 import com.lin.utils.CastUtil;
+import com.lin.utils.CollectionUtil;
 
 import java.util.Map;
 
@@ -34,4 +35,12 @@ public class Param {
     public Map<String, Object> getMap() {
         return paramMap;
     }
+
+    /**
+     * 验证参数是否为空
+     */
+    public boolean isEmpty() {
+        return CollectionUtil.isEmpty(paramMap);
+    }
+
 }

@@ -23,7 +23,7 @@ public class View {
     /**
      * 添加模型到视图对象中
      */
-    private View addModel(String key, Object value) {
+    public View addModel(String key, Object value) {
         model.put(key, value);
         return this;
     }

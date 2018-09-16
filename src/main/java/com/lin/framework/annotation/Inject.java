@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * @since 1.0.0
  * @description 依赖注入注解
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Inject {
 }
