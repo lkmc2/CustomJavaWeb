@@ -4,8 +4,6 @@ import com.lin.framework.annotation.Service;
 import com.lin.framework.annotation.Transaction;
 import com.lin.framework.helper.DatabaseHelper;
 import com.lin.model.Customer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Map;

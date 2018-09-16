@@ -315,4 +315,64 @@ public final class DatabaseHelper {
         }
     }
 
+    /**
+     * 开启事务
+     */
+    public static void beginTransaction() {
+        Connection conn = getConnection();
+
+        if (conn != null) {
+            try {
+                // 关闭自动提交事务（开启事务）
+                conn.setAutoCommit(false);
+            } catch (SQLException e) {
+                LOGGER.error("开启事务失败", e);
+                throw new RuntimeException(e);
+            } finally {
+                // 设置当前连接到本地线程变量
+                CONNECTION_HOLDER.set(conn);
+            }
+        }
+    }
+
+    /**
+     * 提交事务
+     */
+    public static void commitTransaction() {
+        Connection conn = getConnection();
+
+        if (conn != null) {
+            try {
+                conn.commit();
+                conn.close();
+            } catch (SQLException e) {
+                LOGGER.error("提交事务失败", e);
+                throw new RuntimeException(e);
+            } finally {
+                // 移除本地线程的数据库连接
+                CONNECTION_HOLDER.remove();
+            }
+        }
+    }
+
+    /**
+     * 回滚事务
+     */
+    public static void rollbackTransaction() {
+        Connection conn = getConnection();
+
+        if (conn != null) {
+            try {
+                conn.rollback();
+                conn.close();
+            } catch (SQLException e) {
+                LOGGER.error("回滚事务失败", e);
+                throw new RuntimeException(e);
+            } finally {
+                // 移除本地线程的数据库连接
+                CONNECTION_HOLDER.remove();
+            }
+        }
+    }
+
 }
