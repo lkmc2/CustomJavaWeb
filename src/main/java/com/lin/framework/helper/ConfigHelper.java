@@ -67,4 +67,11 @@ public final class ConfigHelper {
                 "/asset/");
     }
 
+    /**
+     * 获取应用文件上传限制大小（属性文件未设置时，默认10M）
+     */
+    public static int getAppUploadLimit() {
+        return PropsUtil.getInt(CONFIG_PROPS, ConfigConstant.APP_UPLOAD_LIMIT,
+                10);
+    }
 }

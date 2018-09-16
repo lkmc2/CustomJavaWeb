@@ -2,7 +2,9 @@ package com.lin.framework.service;
 
 import com.lin.framework.annotation.Service;
 import com.lin.framework.annotation.Transaction;
+import com.lin.framework.bean.FileParam;
 import com.lin.framework.helper.DatabaseHelper;
+import com.lin.framework.helper.UploadHelper;
 import com.lin.model.Customer;
 
 import java.util.List;
@@ -47,6 +49,22 @@ public class CustomerService {
     @Transaction
     public boolean createCustomer(Map<String, Object> fieldMap) {
         return DatabaseHelper.insertEntity(Customer.class, fieldMap);
+    }
+
+    /**
+     * 创建客户（重载）
+     * @param fieldMap 存储用户信息的map
+     * @param fileParam 文件信息
+     * @return 是否创建成功
+     */
+    public boolean createCustomer(Map<String, Object> fieldMap, FileParam fileParam) {
+        // 插入实体
+        boolean result = DatabaseHelper.insertEntity(Customer.class, fieldMap);
+
+        if (result) {
+            UploadHelper.uploadFile("/tmp/upload/", fileParam);
+        }
+        return result;
     }
 
     /**

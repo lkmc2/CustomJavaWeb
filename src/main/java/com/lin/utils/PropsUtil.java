@@ -82,7 +82,7 @@ public final class PropsUtil {
     /**
      * 获取数值型属性（可指定默认值）
      */
-    private static int getInt(Properties props, String key, int defaultValue) {
+    public static int getInt(Properties props, String key, int defaultValue) {
         int value = defaultValue;
 
         // 如果属性中有该关键字，设置返回值
