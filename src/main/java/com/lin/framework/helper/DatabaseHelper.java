@@ -55,6 +55,13 @@ public final class DatabaseHelper {
     }
 
     /**
+     * 获取数据源
+     */
+    public static BasicDataSource getDataSource() {
+        return DATA_SOURCE;
+    }
+
+    /**
      * 获取数据库连接
      */
     public static Connection getConnection() {

@@ -80,6 +80,14 @@
             <version>1.6</version>
         </dependency>
 
+        <!-- Apache MD5加密 -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.11</version>
+        </dependency>
+
+
         <!--数据库连接池-->
         <dependency>
             <groupId>org.apache.commons</groupId>

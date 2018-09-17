@@ -6,21 +6,21 @@ package com.lin.framework.plugin.security.exception;
  * @since 1.0.0
  * @description 授权异常（当权限无效时抛出）
  */
-public class AuchzException extends RuntimeException {
+public class AuthzException extends RuntimeException {
 
-    public AuchzException() {
+    public AuthzException() {
         super();
     }
 
-    public AuchzException(String message) {
+    public AuthzException(String message) {
         super(message);
     }
 
-    public AuchzException(String message, Throwable cause) {
+    public AuthzException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public AuchzException(Throwable cause) {
+    public AuthzException(Throwable cause) {
         super(cause);
     }
 

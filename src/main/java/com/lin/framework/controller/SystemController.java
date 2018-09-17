@@ -5,7 +5,7 @@ import com.lin.framework.annotation.Controller;
 import com.lin.framework.bean.Param;
 import com.lin.framework.bean.View;
 import com.lin.framework.helper.SecurityHelper;
-import com.lin.framework.plugin.security.exception.AuchcException;
+import com.lin.framework.plugin.security.exception.AuthcException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -47,7 +47,7 @@ public class SystemController {
         try {
             // 登陆
             SecurityHelper.login(username, password);
-        } catch (AuchcException e) {
+        } catch (AuthcException e) {
             LOGGER.error("登陆失败", e);
             return new View("/login");
         }

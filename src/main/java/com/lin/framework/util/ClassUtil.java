@@ -36,8 +36,8 @@ public final class ClassUtil {
      * 加载类
      * @param className 类名
      */
-    public static void loadClass(String className) {
-        loadClass(className, true);
+    public static Class<?> loadClass(String className) {
+        return loadClass(className, true);
     }
 
     /**

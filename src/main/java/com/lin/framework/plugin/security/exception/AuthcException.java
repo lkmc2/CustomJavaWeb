@@ -6,21 +6,21 @@ package com.lin.framework.plugin.security.exception;
  * @since 1.0.0
  * @description 认证异常（当非法访问时抛出）
  */
-public class AuchcException extends Exception {
+public class AuthcException extends Exception {
 
-    public AuchcException() {
+    public AuthcException() {
         super();
     }
 
-    public AuchcException(String message) {
+    public AuthcException(String message) {
         super(message);
     }
 
-    public AuchcException(String message, Throwable cause) {
+    public AuthcException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public AuchcException(Throwable cause) {
+    public AuthcException(Throwable cause) {
         super(cause);
     }
 

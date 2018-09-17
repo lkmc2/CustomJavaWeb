@@ -54,26 +54,26 @@ public abstract class AspectProxy implements Proxy {
     /**
      * 执行拦截逻辑
      */
-    public boolean intercept(Class<?> targetClass, Method targetMethod, Object[] methodParams) {
+    public boolean intercept(Class<?> cls, Method method, Object[] params) {
         return false;
     }
 
     /**
      * 在业务代码执行前的逻辑
      */
-    public void before(Class<?> targetClass, Method targetMethod, Object[] methodParams) {
+    public void before(Class<?> cls, Method method, Object[] params) {
     }
 
     /**
      * 在业务代码执行后的逻辑
      */
-    public void after(Class<?> targetClass, Method targetMethod, Object[] methodParams, Object result) {
+    public void after(Class<?> cls, Method method, Object[] params, Object result) {
     }
 
     /**
      * 发生异常时的逻辑
      */
-    public void error(Class<?> targetClass, Method targetMethod, Object[] methodParams, Exception e) {
+    public void error(Class<?> cls, Method method, Object[] params, Exception e) {
     }
 
     /**
