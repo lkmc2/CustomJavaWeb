@@ -180,7 +180,7 @@
       <replace>params</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor</dir>
+      <dir />
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -457,7 +457,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DynamicClient">
+  <component name="RunManager" selected="Application.SimpleClient">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.weaving.Client" />
       <module name="CustomJavaWeb" />
@@ -502,13 +502,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="JaxWsServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.cxf.server.JaxWsServer" />
+    <configuration name="SimpleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.cxf.client.SimpleClient" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.cxf.server.*" />
+          <option name="PATTERN" value="demo.cxf.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -673,19 +673,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.JaxWsServer" />
-      <item itemvalue="Application.SimpleServer" />
       <item itemvalue="Application.JaxWsClient" />
       <item itemvalue="Application.JaxWsDynamicClient" />
       <item itemvalue="Application.DynamicClient" />
+      <item itemvalue="Application.SimpleClient" />
+      <item itemvalue="Application.SimpleServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleClient" />
+        <item itemvalue="Application.SimpleServer" />
         <item itemvalue="Application.DynamicClient" />
         <item itemvalue="Application.JaxWsDynamicClient" />
         <item itemvalue="Application.JaxWsClient" />
-        <item itemvalue="Application.JaxWsServer" />
-        <item itemvalue="Application.SimpleServer" />
       </list>
     </recent_temporary>
   </component>
