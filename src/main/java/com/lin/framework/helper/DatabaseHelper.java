@@ -4,9 +4,7 @@ import com.lin.utils.CollectionUtil;
 import com.lin.utils.PropsUtil;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
+import org.apache.commons.dbutils.handlers.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,10 +14,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 /**
  * @author lkmc2
@@ -149,6 +144,50 @@ public final class DatabaseHelper {
         }
 
         return result;
+    }
+
+    /**
+     * 查询并返回单个列值
+     */
+    public static <T> T query(String sql, Object... params) {
+        T obj;
+
+        try {
+            // 获取数据库连接
+            Connection conn = getConnection();
+            obj = QUERY_RUNNER.query(conn, sql, new ScalarHandler<T>(), params);
+        } catch (SQLException e) {
+            LOGGER.error("执行查询失败", e);
+            throw new RuntimeException(e);
+        }
+
+        return obj;
+    }
+
+    /**
+     * 查询并返回多个列值
+     */
+    public static <T> List<T> queryList(String sql, Object... params) {
+        List<T> list;
+
+        try {
+            // 获取数据库连接
+            Connection conn = getConnection();
+            list = QUERY_RUNNER.query(conn, sql, new ColumnListHandler<T>(), params);
+        } catch (SQLException e) {
+            LOGGER.error("执行查询并返回列值失败", e);
+            throw new RuntimeException(e);
+        }
+
+        return list;
+    }
+
+    /**
+     * 查询并返回多个列值（去重）
+     */
+    public static <T> Set<T> querySet(String sql, Object... params) {
+        Collection<T> valueList = queryList(sql, params);
+        return new LinkedHashSet<T>(valueList);
     }
 
     /**

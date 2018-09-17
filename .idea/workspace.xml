@@ -7,10 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/controller/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/SecurityHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/AppSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/SmartSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchcException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchzException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/smart-security.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shiro.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/smart.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/smart.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,38 +66,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SmartSecurity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/SmartSecurity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
+            <state relative-caret-position="418">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="AppSecurity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/AppSecurity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="228">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shiro.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/shiro.ini">
+      <file leaf-file-name="smart.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/smart.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="456">
+              <caret line="24" column="190" selection-start-line="24" selection-start-column="190" selection-end-line="24" selection-end-column="190" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="228">
+              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityHelper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/SecurityHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuchzException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchzException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/controller/SystemController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2615">
+              <caret line="177" column="33" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -102,8 +167,8 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -137,14 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/TestMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceATest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceBTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/SequenceB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/MyThreadLocal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceB.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/sequence/impl/SequenceC.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/SequenceCTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/ProductService.java" />
@@ -155,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/RightTestThreadMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/threadlocal/dbutil/TestThreadMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/annotation/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/proxy/TransactionProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/AopHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/annotation/Inject.java" />
@@ -169,7 +225,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/FileParam.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/Param.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/smart.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/utils/PropsUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/ConfigConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/ConfigHelper.java" />
@@ -186,8 +241,18 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/shiro/HelloShiro.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/smart-security.ini" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/SmartSecurity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/AppSecurity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/shiro.ini" />
+        <option value="$PROJECT_DIR$/src/main/resources/smart.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchcException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchzException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/controller/SystemController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/SecurityHelper.java" />
       </list>
     </option>
   </component>
@@ -244,7 +309,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,7 +340,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -284,8 +348,29 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lin" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lin" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -294,17 +379,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CustomJavaWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomJavaWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -332,14 +411,15 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\webapp\WEB-INF\view" />
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lin.framework.plugin.security.exception" />
       <recent name="demo.threadlocal.dbutil" />
       <recent name="demo.threadlocal" />
       <recent name="demo.threadlocal.sequence.impl" />
       <recent name="demo.springaspect" />
-      <recent name="demo.springaspect.aspect" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\resources\assert\lib\jquery" />
@@ -349,6 +429,7 @@
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\springaspect\show" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lin.framework.plugin.security.exception" />
       <recent name="com.lin.framework.bean" />
       <recent name="com.lin.framework.proxy" />
       <recent name="com.lin.utils" />
@@ -618,28 +699,8 @@
       <workItem from="1536898124651" duration="3121000" />
       <workItem from="1536901760433" duration="30553000" />
       <workItem from="1537067579116" duration="20004000" />
-      <workItem from="1537096175001" duration="5850000" />
-    </task>
-    <task id="LOCAL-00027" summary="添加配置文件帮助类">
-      <created>1536926799561</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1536926799561</updated>
-    </task>
-    <task id="LOCAL-00028" summary="添加类操作工具类">
-      <created>1536929110159</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1536929110159</updated>
-    </task>
-    <task id="LOCAL-00029" summary="添加控制器等必要注解">
-      <created>1536929336760</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1536929336760</updated>
+      <workItem from="1537096175001" duration="7208000" />
+      <workItem from="1537154126873" duration="3846000" />
     </task>
     <task id="LOCAL-00030" summary="添加类操作助手类">
       <created>1536929964836</created>
@@ -963,7 +1024,28 @@
       <option name="project" value="LOCAL" />
       <updated>1537100915766</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="添加Shiro Web的例子">
+      <created>1537102070657</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1537102070657</updated>
+    </task>
+    <task id="LOCAL-00077" summary="为Shiro添加缓存，提高性能">
+      <created>1537102190939</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1537102190939</updated>
+    </task>
+    <task id="LOCAL-00078" summary="为Shiro添加数据库密码加密">
+      <created>1537102320429</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1537102320429</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -999,7 +1081,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90193000" />
+    <option name="totallyTimeSpent" value="95397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1022,7 +1104,6 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49851632" weight="0.40387097" />
       <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="Messages" order="27" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="29" weight="0.32908162" />
@@ -1032,8 +1113,8 @@
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="31" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="33" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.60682493" />
       <window_info anchor="bottom" id="Problems" order="4" weight="0.32903227" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5890208" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -1044,6 +1125,7 @@
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="34" weight="0.32903227" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="27" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -1082,9 +1164,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加Spring AOP自动代理的例子" />
-    <MESSAGE value="添加Spring AOP自动代理（扫描切面配置）的例子" />
-    <MESSAGE value="添加Spring + AspectJ，基于注解：通过AspectJ execution表达式拦截方法的例子" />
     <MESSAGE value="添加Spring + AspectJ，基于注解：通过AspectJ @annotation表达式拦截方法的例子" />
     <MESSAGE value="添加Spring + AspectJ，引入增强的例子" />
     <MESSAGE value="添加Spring + AspectJ，基于配置实现切面拦截的例子" />
@@ -1107,7 +1186,10 @@
     <MESSAGE value="添加自定义文件上传功能" />
     <MESSAGE value="添加Servlet助手类，实现与Servlet API的解耦，让Controller也能获取Request和Response对象" />
     <MESSAGE value="添加使用Shiro安全框架的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加使用Shiro安全框架的例子" />
+    <MESSAGE value="添加Shiro Web的例子" />
+    <MESSAGE value="为Shiro添加缓存，提高性能" />
+    <MESSAGE value="为Shiro添加数据库密码加密" />
+    <option name="LAST_COMMIT_MESSAGE" value="为Shiro添加数据库密码加密" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1119,81 +1201,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/proxy/ProxyManger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/proxy/TransactionProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/IocHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/AopHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1045">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/annotation/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/annotation/Inject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/javax/servlet/GenericServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/controller/CustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/util/ClassUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
           <caret line="52" column="65" lean-forward="true" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
-          <folding>
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1232,13 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="182" column="30" selection-start-line="182" selection-start-column="30" selection-end-line="182" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/utils/CollectionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1254,12 +1258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1267,25 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/smart.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1356,11 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1424,9 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1434,9 +1405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="31" column="60" lean-forward="true" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1444,11 +1412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1490,38 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-            <element signature="e#2003#2004#0" expanded="true" />
-            <element signature="e#2056#2057#0" expanded="true" />
-            <element signature="e#2128#2158#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2316#2346#0" expanded="true" />
-            <element signature="e#2379#2380#0" expanded="true" />
-            <element signature="e#2436#2437#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2930#2960#0" expanded="true" />
-            <element signature="e#3017#3018#0" expanded="true" />
-            <element signature="e#3074#3075#0" expanded="true" />
-            <element signature="e#3317#3347#0" expanded="true" />
-            <element signature="e#3212#3213#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3302#3303#0" expanded="true" />
-            <element signature="e#3329#3330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1532,20 +1463,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1560,6 +1477,117 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/SmartSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/AppSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/smart-security.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="117" selection-start-line="16" selection-start-column="117" selection-end-line="16" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/smart.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="190" selection-start-line="24" selection-start-column="190" selection-end-line="24" selection-end-column="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchcException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/exception/AuchzException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2615">
+          <caret line="177" column="33" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/SecurityHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
