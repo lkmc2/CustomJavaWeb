@@ -7,22 +7,31 @@
        http://cxf.apache.org/jaxws
        http://cxf.apache.org/schemas/jaxws.xsd">
 
-    <!--&lt;!&ndash;JAX-WS写法&ndash;&gt;-->
+    <!--JAX-WS服务器写法-->
     <!--<jaxws:server id="helloService" address="/soap/hello">-->
         <!--<jaxws:serviceBean>-->
             <!--<ref bean="helloServiceImpl"/>-->
         <!--</jaxws:serviceBean>-->
     <!--</jaxws:server>-->
 
-    <!--&lt;!&ndash;JAX-WS简单写法&ndash;&gt;-->
+    <!--&lt;!&ndash;JAX-WS服务器简单写法&ndash;&gt;-->
     <!--<jaxws:endpoint id="helloService" implementor="#helloServiceImpl"-->
                     <!--address="/soap/hello"/>-->
 
     <!--simple服务器写法-->
-    <simple:server id="helloService" serviceClass="#helloService" address="/soap/hello">
-        <simple:serviceBean>
-            <ref bean="#helloServiceImpl"/>
-        </simple:serviceBean>
-    </simple:server>
+    <!--<simple:server id="helloService" serviceClass="#helloService" address="/soap/hello">-->
+        <!--<simple:serviceBean>-->
+            <!--<ref bean="#helloServiceImpl"/>-->
+        <!--</simple:serviceBean>-->
+    <!--</simple:server>-->
+
+    <!--客户端生成工厂-->
+    <bean id="factoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+        <property name="serviceClass" value="demo.cxf.HelloService"/>
+        <property name="address" value="http://localhost:8080/ws/soap/hello"/>
+    </bean>
+
+    <!--JAX客户端-->
+    <bean id="helloService" factory-bean="factoryBean" factory-method="create"/>
 
 </beans>
