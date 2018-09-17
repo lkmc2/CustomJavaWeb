@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-cxf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/cxf/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/cxf/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-cxf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-cxf.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +66,8 @@
       <file leaf-file-name="HelloServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/HelloServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="152">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,24 +84,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DispatcherServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="55" column="44" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="55" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="spring.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-cxf.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spring-cxf.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-cxf.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="342">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -220,9 +197,9 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/cxf/HelloServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/spring-cxf.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-cxf.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-cxf.xml" />
       </list>
     </option>
   </component>
@@ -750,21 +727,7 @@
       <workItem from="1536901760433" duration="30553000" />
       <workItem from="1537067579116" duration="20004000" />
       <workItem from="1537096175001" duration="7208000" />
-      <workItem from="1537154126873" duration="20647000" />
-    </task>
-    <task id="LOCAL-00034" summary="添加封装请求信息类">
-      <created>1536933197666</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1536933197666</updated>
-    </task>
-    <task id="LOCAL-00035" summary="添加封装Action信息类">
-      <created>1536933397537</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1536933397537</updated>
+      <workItem from="1537154126873" duration="20984000" />
     </task>
     <task id="LOCAL-00036" summary="添加控制器助手类">
       <created>1536934639320</created>
@@ -1095,7 +1058,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537184126573</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="添加CXF+Spring+Tomcat启动WSDL服务的例子">
+      <created>1537185164149</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1537185164149</updated>
+    </task>
+    <task id="LOCAL-00084" summary="添加CXF+Spring+Tomcat启动WSDL服务简写配置JAX-WS的例子">
+      <created>1537185311989</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1537185311989</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1131,7 +1108,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112198000" />
+    <option name="totallyTimeSpent" value="112535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1160,7 +1137,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="29" weight="0.32908162" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32387096" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.4619355" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.4619355" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="31" weight="0.34580645" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="33" />
@@ -1214,8 +1191,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加载自定义AOP框架" />
-    <MESSAGE value="添加线程测试列子" />
     <MESSAGE value="添加Java ThreadLocal的例子" />
     <MESSAGE value="修改ThreadLocal例子的包结构" />
     <MESSAGE value="添加自定义ThreadLocal的示例" />
@@ -1239,7 +1214,9 @@
     <MESSAGE value="实现一个安全控制框架" />
     <MESSAGE value="添加CXF使用JAX-WS发布WSDL服务的例子" />
     <MESSAGE value="添加Simple服务器发布WSDL服务的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加Simple服务器发布WSDL服务的例子" />
+    <MESSAGE value="添加CXF+Spring+Tomcat启动WSDL服务的例子" />
+    <MESSAGE value="添加CXF+Spring+Tomcat启动WSDL服务简写配置JAX-WS的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加CXF+Spring+Tomcat启动WSDL服务简写配置JAX-WS的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1659,27 +1636,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/HelloServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-cxf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1690,6 +1650,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="55" column="42" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="55" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1697,17 +1671,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/helper/DatabaseHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/HelloServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        <state relative-caret-position="152">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-cxf.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="55" column="44" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="55" selection-end-column="44" />
+        <state relative-caret-position="342">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
