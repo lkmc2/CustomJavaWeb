@@ -25,13 +25,18 @@
         <!--</simple:serviceBean>-->
     <!--</simple:server>-->
 
-    <!--客户端生成工厂-->
-    <bean id="factoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
-        <property name="serviceClass" value="demo.cxf.HelloService"/>
-        <property name="address" value="http://localhost:8080/ws/soap/hello"/>
-    </bean>
 
-    <!--JAX客户端-->
-    <bean id="helloService" factory-bean="factoryBean" factory-method="create"/>
+    <!--&lt;!&ndash;客户端生成工厂&ndash;&gt;-->
+    <!--<bean id="factoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">-->
+        <!--<property name="serviceClass" value="demo.cxf.HelloService"/>-->
+        <!--<property name="address" value="http://localhost:8080/ws/soap/hello"/>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;JAX客户端&ndash;&gt;-->
+    <!--<bean id="helloService" factory-bean="factoryBean" factory-method="create"/>-->
+
+    <!--JAX客户端创建简写方法-->
+    <jaxws:client id="helloService" serviceClass="demo.cxf.HelloService"
+                  address="http://localhost:8080/ws/soap/hello"/>
 
 </beans>
