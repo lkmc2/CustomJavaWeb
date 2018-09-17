@@ -7,10 +7,15 @@
        http://cxf.apache.org/jaxws
        http://cxf.apache.org/schemas/jaxws.xsd">
 
-    <jaxws:server id="helloService" address="/soap/hello">
-        <jaxws:serviceBean>
-            <ref bean="helloServiceImpl"/>
-        </jaxws:serviceBean>
-    </jaxws:server>
+    <!--&lt;!&ndash;JAX-WS写法&ndash;&gt;-->
+    <!--<jaxws:server id="helloService" address="/soap/hello">-->
+        <!--<jaxws:serviceBean>-->
+            <!--<ref bean="helloServiceImpl"/>-->
+        <!--</jaxws:serviceBean>-->
+    <!--</jaxws:server>-->
+
+    <!--JAX-WS简单写法-->
+    <jaxws:endpoint id="helloService" implementor="#helloServiceImpl"
+                    address="/soap/hello"/>
 
 </beans>
