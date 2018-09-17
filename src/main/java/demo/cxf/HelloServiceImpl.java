@@ -1,5 +1,7 @@
 package demo.cxf;
 
+import org.springframework.stereotype.Component;
+
 import javax.jws.WebService;
 
 /**
@@ -8,6 +10,7 @@ import javax.jws.WebService;
  * @description 打招呼服务实现类
  */
 @WebService
+@Component
 public class HelloServiceImpl implements HelloService {
 
     @Override
