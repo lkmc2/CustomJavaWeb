@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringClient {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-cxf.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-cxf-client.xml");
 
         // 从Spring中获取接口
         HelloService helloService = context.getBean("helloService", HelloService.class);

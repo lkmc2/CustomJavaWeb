@@ -183,6 +183,13 @@
             <version>${cxf.version}</version>
         </dependency>
 
+        <!--CXF WS-Security-->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-ws-security</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>

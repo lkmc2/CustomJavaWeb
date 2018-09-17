@@ -7,24 +7,6 @@
        http://cxf.apache.org/jaxws
        http://cxf.apache.org/schemas/jaxws.xsd">
 
-    <!--JAX-WS服务器写法-->
-    <!--<jaxws:server id="helloService" address="/soap/hello">-->
-        <!--<jaxws:serviceBean>-->
-            <!--<ref bean="helloServiceImpl"/>-->
-        <!--</jaxws:serviceBean>-->
-    <!--</jaxws:server>-->
-
-    <!--&lt;!&ndash;JAX-WS服务器简单写法&ndash;&gt;-->
-    <!--<jaxws:endpoint id="helloService" implementor="#helloServiceImpl"-->
-                    <!--address="/soap/hello"/>-->
-
-    <!--simple服务器写法-->
-    <!--<simple:server id="helloService" serviceClass="#helloService" address="/soap/hello">-->
-        <!--<simple:serviceBean>-->
-            <!--<ref bean="#helloServiceImpl"/>-->
-        <!--</simple:serviceBean>-->
-    <!--</simple:server>-->
-
 
     <!--&lt;!&ndash;客户端生成工厂&ndash;&gt;-->
     <!--<bean id="factoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">-->
@@ -37,6 +19,23 @@
 
     <!--JAX客户端创建简写方法-->
     <jaxws:client id="helloService" serviceClass="demo.cxf.HelloService"
-                  address="http://localhost:8080/ws/soap/hello"/>
+                  address="http://localhost:8080/ws/soap/hello">
+        <jaxws:outInterceptors>
+            <ref bean="wss4jOutInterceptor"/>
+        </jaxws:outInterceptors>
+    </jaxws:client>
+
+    <!--使客户端对输出的消息进行拦截-->
+    <bean id="wss4jOutInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor">
+        <constructor-arg>
+            <map>
+                <!--用户认证（明文密码）-->
+                <entry key="action" value="UsernameToken"/>
+                <entry key="user" value="client"/>
+                <entry key="passwordType" value="PasswordText"/>
+                <entry key="passwordCallbackRef" value-ref="clientPasswordCallback"/>
+            </map>
+        </constructor-arg>
+    </bean>
 
 </beans>
