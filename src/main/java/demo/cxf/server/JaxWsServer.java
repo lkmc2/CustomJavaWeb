@@ -1,5 +1,7 @@
-package demo.cxf;
+package demo.cxf.server;
 
+import demo.cxf.HelloService;
+import demo.cxf.HelloServiceImpl;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
 /**
