@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/cxf/JaxWsServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/cxf/server/JaxWsServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/cxf/SimpleServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/cxf/server/SimpleServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/cxf/client/DynamicClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,14 +110,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JaxWsClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JaxWsClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="228">
+              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JaxWsDynamicClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsDynamicClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/client/DynamicClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -172,8 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/UploadHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/helper/RequestHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/bean/View.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/controller/CustomerController.java" />
@@ -223,6 +239,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lin/framework/DispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-cxf.xml" />
         <option value="$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsDynamicClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/cxf/client/DynamicClient.java" />
       </list>
     </option>
   </component>
@@ -400,11 +418,11 @@
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\java\demo\advisor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.cxf.client" />
       <recent name="com.lin.framework.plugin.security.tag" />
       <recent name="com.lin.framework.plugin.security.exception" />
       <recent name="demo.threadlocal.dbutil" />
       <recent name="demo.threadlocal" />
-      <recent name="demo.threadlocal.sequence.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IntellJ Project\CustomJavaWeb\src\main\resources\assert\lib\jquery" />
@@ -439,7 +457,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JaxWsClient">
+  <component name="RunManager" selected="Application.DynamicClient">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.weaving.Client" />
       <module name="CustomJavaWeb" />
@@ -451,30 +469,30 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="HelloShiro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.shiro.HelloShiro" />
+    <configuration name="DynamicClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.cxf.client.DynamicClient" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.shiro.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="HelperLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lin.framework.HelperLoader" />
-      <module name="CustomJavaWeb" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lin.framework.*" />
+          <option name="PATTERN" value="demo.cxf.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="JaxWsClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.cxf.client.JaxWsClient" />
+      <module name="CustomJavaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.cxf.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="JaxWsDynamicClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.cxf.client.JaxWsDynamicClient" />
       <module name="CustomJavaWeb" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -655,19 +673,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 7.0.82" />
-      <item itemvalue="Application.HelperLoader" />
-      <item itemvalue="Application.HelloShiro" />
       <item itemvalue="Application.JaxWsServer" />
       <item itemvalue="Application.SimpleServer" />
       <item itemvalue="Application.JaxWsClient" />
+      <item itemvalue="Application.JaxWsDynamicClient" />
+      <item itemvalue="Application.DynamicClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DynamicClient" />
+        <item itemvalue="Application.JaxWsDynamicClient" />
         <item itemvalue="Application.JaxWsClient" />
         <item itemvalue="Application.JaxWsServer" />
         <item itemvalue="Application.SimpleServer" />
-        <item itemvalue="Application.HelloShiro" />
-        <item itemvalue="Application.HelperLoader" />
       </list>
     </recent_temporary>
   </component>
@@ -686,21 +704,7 @@
       <workItem from="1536901760433" duration="30553000" />
       <workItem from="1537067579116" duration="20004000" />
       <workItem from="1537096175001" duration="7208000" />
-      <workItem from="1537154126873" duration="21258000" />
-    </task>
-    <task id="LOCAL-00037" summary="添加HelperLoader来加载所有的Helper类">
-      <created>1536935013430</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1536935013430</updated>
-    </task>
-    <task id="LOCAL-00038" summary="进一步完善字符串工具类的方法">
-      <created>1536987079134</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1536987079134</updated>
+      <workItem from="1537154126873" duration="21545000" />
     </task>
     <task id="LOCAL-00039" summary="添加代理类例子">
       <created>1536987574012</created>
@@ -1031,7 +1035,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537185421171</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="添加Jax静态代理客户端调用服务器接口的例子">
+      <created>1537185714117</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1537185714117</updated>
+    </task>
+    <task id="LOCAL-00087" summary="添加Jax动态代理客户端调用服务器接口的例子">
+      <created>1537185920015</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1537185920015</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1067,7 +1085,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112809000" />
+    <option name="totallyTimeSpent" value="113096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1095,7 +1113,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="29" weight="0.32908162" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32387096" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32258064" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.4619355" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="31" weight="0.34580645" />
@@ -1150,8 +1168,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改ThreadLocal例子的包结构" />
-    <MESSAGE value="添加自定义ThreadLocal的示例" />
     <MESSAGE value="修改AOP相关内容的包结构" />
     <MESSAGE value="修改ThreadLocal示例的包结构" />
     <MESSAGE value="添加单线程执行的DBUtil示例" />
@@ -1175,7 +1191,9 @@
     <MESSAGE value="添加CXF+Spring+Tomcat启动WSDL服务的例子" />
     <MESSAGE value="添加CXF+Spring+Tomcat启动WSDL服务简写配置JAX-WS的例子" />
     <MESSAGE value="添加CXF+Spring+Tomcat启动WSDL服务simple服务器写法" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加CXF+Spring+Tomcat启动WSDL服务simple服务器写法" />
+    <MESSAGE value="添加Jax静态代理客户端调用服务器接口的例子" />
+    <MESSAGE value="添加Jax动态代理客户端调用服务器接口的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Jax动态代理客户端调用服务器接口的例子" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,23 +1205,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/shiro/HelloShiro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/AppSecurity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1617,11 +1618,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="228">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/client/JaxWsDynamicClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/cxf/client/DynamicClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
         </state>
       </provider>
     </entry>
