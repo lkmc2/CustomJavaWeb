@@ -6,8 +6,6 @@
 </head>
 <body>
 
-<!--打开该页面需要启动demo.rest.server.RestServer-->
-
 <div class="container">
     <div class="page-header">
         <h1>Product</h1>
@@ -54,7 +52,10 @@
         $.ajax({
             type: 'get',
             url: 'http://localhost:8080/ws/rest/products',
-            dataType: 'json',
+            dataType: 'jsonp',
+            jsonp: '_jsonp',
+            jsonpCallback: 'callback',
+            timeout: 5000,
             success: function (data) {
                 var template = $("#product_table_template").html();
 
