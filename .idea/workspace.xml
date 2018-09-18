@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b24533c-fb77-488b-81f8-6da497d27232" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/rest/client/CXFWebClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/rest/client/CXFWebClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/rest/client/CXFWebClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,8 +57,8 @@
       <file leaf-file-name="JAXRS20Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/rest/client/JAXRS20Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="532">
+              <caret line="41" column="11" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="41" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +69,11 @@
       <file leaf-file-name="CXFWebClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/rest/client/CXFWebClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="304">
+              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -642,14 +646,7 @@
       <workItem from="1537067579116" duration="20004000" />
       <workItem from="1537096175001" duration="7208000" />
       <workItem from="1537154126873" duration="28400000" />
-      <workItem from="1537240825303" duration="1078000" />
-    </task>
-    <task id="LOCAL-00047" summary="添加使用xml以及包扫描配置Spring AOP的例子">
-      <created>1536991562345</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1536991562345</updated>
+      <workItem from="1537240825303" duration="1358000" />
     </task>
     <task id="LOCAL-00048" summary="添加抛出增强类">
       <created>1536999375337</created>
@@ -987,7 +984,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537241355480</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="添加使用CXF发布和调用REST服务的例子（通用WebClient客户端）">
+      <created>1537242134785</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1537242134786</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1023,7 +1027,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121029000" />
+    <option name="totallyTimeSpent" value="121309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="907" extended-state="0" />
@@ -1106,7 +1110,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="在自定义框架中添加事务代理机智" />
     <MESSAGE value="优化Action参数使用方式" />
     <MESSAGE value="添加自定义文件上传功能" />
     <MESSAGE value="添加Servlet助手类，实现与Servlet API的解耦，让Controller也能获取Request和Response对象" />
@@ -1131,7 +1134,8 @@
     <MESSAGE value="添加使用CXF发布和调用REST服务的例子" />
     <MESSAGE value="添加使用CXF发布和调用REST服务的例子（使用JAX-RS 2.0时代的客户端）" />
     <MESSAGE value="添加使用CXF发布和调用REST服务的例子（使用JAX-RS 2.0时代的客户端，带泛型）" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加使用CXF发布和调用REST服务的例子（使用JAX-RS 2.0时代的客户端，带泛型）" />
+    <MESSAGE value="添加使用CXF发布和调用REST服务的例子（通用WebClient客户端）" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加使用CXF发布和调用REST服务的例子（通用WebClient客户端）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,13 +1147,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/plugin/security/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lin/framework/util/CodecUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1486,10 +1483,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Array.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1690">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/rest/client/JAXRS20Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="532">
+          <caret line="41" column="11" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="41" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1498,8 +1502,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/rest/client/CXFWebClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="304">
+          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
