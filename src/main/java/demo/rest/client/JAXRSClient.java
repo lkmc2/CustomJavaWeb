@@ -34,7 +34,7 @@ public class JAXRSClient {
         }
 
         /*
-            运行需启动 demo.rest.server.RestServer 服务器
+            运行前需启动 demo.rest.server.RestServer 服务器
             运行结果：
             Product{id=1, name='Apple', price=3.0}
             Product{id=2, name='Orange', price=4.0}
