@@ -1,2 +1,2 @@
 # CustomJavaWeb
-自定义JavaWeb框架
+自定义JavaWeb框架，实现SpringMVC的AOP以及IOC功能，并加入Shiro安全框架，以及对SOAP和REST的支持。
