@@ -3,10 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:simple="http://cxf.apache.org/jaxws"
        xmlns:cfx="http://cxf.apache.org/core" xmlns:cxf="http://cxf.apache.org/core"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://cxf.apache.org/jaxws
-       http://cxf.apache.org/schemas/jaxws.xsd http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd">
+       http://cxf.apache.org/schemas/jaxws.xsd http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs-common.xsd">
 
     <!--&lt;!&ndash;JAX-WS服务器写法&ndash;&gt;-->
     <!--<jaxws:server id="helloService" address="/soap/hello">-->
@@ -15,13 +16,13 @@
         <!--</jaxws:serviceBean>-->
     <!--</jaxws:server>-->
 
-    <!--JAX-WS服务器简单写法-->
-    <jaxws:endpoint id="helloService" implementor="#helloServiceImpl"
-                    address="/soap/hello">
-        <jaxws:inInterceptors>
-            <ref bean="wss4jInInterceptor"/>
-        </jaxws:inInterceptors>
-    </jaxws:endpoint>
+    <!--&lt;!&ndash;JAX-WS服务器简单写法&ndash;&gt;-->
+    <!--<jaxws:endpoint id="helloService" implementor="#helloServiceImpl"-->
+                    <!--address="/soap/hello">-->
+        <!--<jaxws:inInterceptors>-->
+            <!--<ref bean="wss4jInInterceptor"/>-->
+        <!--</jaxws:inInterceptors>-->
+    <!--</jaxws:endpoint>-->
 
     <!--simple服务器写法-->
     <!--<simple:server id="helloService" serviceClass="#helloService" address="/soap/hello">-->
@@ -30,23 +31,33 @@
         <!--</simple:serviceBean>-->
     <!--</simple:server>-->
 
-    <!--WS-Security安全框架-->
-    <bean id="wss4jInInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
-        <constructor-arg>
-            <map>
-                <!--用户认证（明文密码）-->
-                <entry key="action" value="UsernameToken"/>
-                <entry key="passwordType" value="PasswordText"/>
-                <entry key="passwordCallbackRef" value-ref="serverPasswordCallback"/>
-            </map>
-        </constructor-arg>
-    </bean>
+    <!--&lt;!&ndash;WS-Security安全框架&ndash;&gt;-->
+    <!--<bean id="wss4jInInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">-->
+        <!--<constructor-arg>-->
+            <!--<map>-->
+                <!--&lt;!&ndash;用户认证（明文密码）&ndash;&gt;-->
+                <!--<entry key="action" value="UsernameToken"/>-->
+                <!--<entry key="passwordType" value="PasswordText"/>-->
+                <!--<entry key="passwordCallbackRef" value-ref="serverPasswordCallback"/>-->
+            <!--</map>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
 
-    <!--日志监控-->
-    <cfx:bus>
-        <cfx:features>
-            <cxf:logging/>
-        </cfx:features>
-    </cfx:bus>
+    <!--&lt;!&ndash;日志监控&ndash;&gt;-->
+    <!--<cfx:bus>-->
+        <!--<cfx:features>-->
+            <!--<cxf:logging/>-->
+        <!--</cfx:features>-->
+    <!--</cfx:bus>-->
+
+    <!--REST服务器配置-->
+    <jaxrs:server address="/rest">
+        <jaxrs:serviceBeans>
+            <ref bean="productServiceImpl"/>
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider"/>
+        </jaxrs:providers>
+    </jaxrs:server>
 
 </beans>

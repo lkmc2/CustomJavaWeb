@@ -32,6 +32,7 @@
     <!--CXF-->
     <servlet>
         <servlet-name>cxf</servlet-name>
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>

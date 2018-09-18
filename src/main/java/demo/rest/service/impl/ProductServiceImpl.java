@@ -2,6 +2,7 @@ package demo.rest.service.impl;
 
 import demo.rest.entity.Product;
 import demo.rest.service.ProductService;
+import org.springframework.stereotype.Component;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ import java.util.Map;
  * @date 2018/9/17
  * @description 产品服务实现类
  */
+@Component
 public class ProductServiceImpl implements ProductService {
 
     @Override
