@@ -203,6 +203,13 @@
             <version>${cxf.version}</version>
         </dependency>
 
+        <!--CXF CORS跨域请求-->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-security-cors</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+
         <!--CXF WS-Security-->
         <dependency>
             <groupId>org.apache.cxf</groupId>
