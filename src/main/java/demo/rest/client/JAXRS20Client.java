@@ -1,8 +1,10 @@
 package demo.rest.client;
 
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
+import demo.rest.entity.Product;
 
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
@@ -20,15 +22,15 @@ public class JAXRS20Client {
         JacksonJsonProvider jsonProvider = new JacksonJsonProvider();
 
         // 创建客户端，并获取所有产品列表
-        List list = ClientBuilder.newClient()
+        List<Product> productList = ClientBuilder.newClient()
                 .register(jsonProvider)
                 .target(baseAddress)
                 .path("/products")
                 .request(MediaType.APPLICATION_JSON)
-                .get(List.class);
+                .get(new GenericType<List<Product>>(){ });
 
         // 遍历输出产品列表
-        list.forEach(System.out::println);
+        productList.forEach(System.out::println);
 
         /*
             运行前需启动 demo.rest.server.RestServer 服务器
